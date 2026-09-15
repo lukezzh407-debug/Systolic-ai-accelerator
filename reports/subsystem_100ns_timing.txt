@@ -1,0 +1,827 @@
+Timing Update Started(Full_timing_update) : updateCount: 1 / Mem-peak : 2222 MB / Date: Mon Sep 14 18:33:44 2026
+
+Timing Update Completed: Mem-peak: 2222 MB / Date: Mon Sep 14 18:33:45 2026
+
+Information: Corner max.SSG.1P62V-0P00V-0P00V-0P00V.M40C_FuncCmaxDP: no PVT mismatches. (PVT-032)
+Information: The stitching and editing of coupling caps is turned OFF for design 'subsystem:subsystem.design'. (TIM-125)
+Information: Design Average RC for design subsystem  (NEX-011)
+Information: r = 0.219770 ohm/um, via_r = 3.999095 ohm/cut, c = 0.156831 ff/um, cc = 0.000000 ff/um (X dir) (NEX-017)
+Information: r = 0.238095 ohm/um, via_r = 4.168349 ohm/cut, c = 0.170750 ff/um, cc = 0.000000 ff/um (Y dir) (NEX-017)
+Information: The RC mode used is VR for design 'subsystem'. (NEX-022)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 127554, routed nets = 0, across physical hierarchy nets = 0, parasitics cached nets = 127552, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
+************************************************************
+Timer Settings:
+Delay Calculation Style:                   auto
+Signal Integrity Analysis:                 disabled
+Timing Window Analysis:                    disabled
+Advanced Waveform Propagation:             disabled
+Variation Type:                            fixed_derate
+Clock Reconvergence Pessimism Removal:     disabled
+Advanced Receiver Model:                   disabled
+LLE:                                       disabled
+ML Acceleration:                           off
+Smart Arc Optimization:                    disabled
+************************************************************
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 10
+        -report_by design
+        -nosplit
+Design : subsystem
+Version: X-2025.06-SP3
+Date   : Mon Sep 14 18:33:50 2026
+****************************************
+
+  Startpoint: u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/booth_mult.iter_cnt_reg[2] (rising edge-triggered flip-flop clocked by clk_in)
+  Endpoint: u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/sum_out_reg[31] (rising edge-triggered flip-flop clocked by clk_in)
+  Mode: FuncModeB0
+  Corner: max.SSG.1P62V-0P00V-0P00V-0P00V.M40C_FuncCmaxDP
+  Scenario: FuncModeB0::max.SSG.1P62V-0P00V-0P00V-0P00V.M40C_FuncCmaxDP
+  Path Group: clk_in
+  Path Type: max
+
+  Point                                                                                                                                     Incr        Path  
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  clock clk_in (rise edge)                                                                                                                 0.0000      0.0000
+  clock network delay (ideal)                                                                                                              0.0000      0.0000
+
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/booth_mult.iter_cnt_reg[2]/C (SDFRRHDX2)         0.0000      0.0000 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/booth_mult.iter_cnt_reg[2]/Q (SDFRRHDX2)         1.5893      1.5893 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/ctmi_3720/Q (NA2HDX1)                            1.1164      2.7058 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/ctmi_3734/Q (OA22HDX1)                           0.5371      3.2429 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/ctmi_3733/Q (ON221HDX1)                          0.2367      3.4796 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/ctmi_3730/Q (AN221HDX1)                          0.7098      4.1894 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/ctmi_3761/Q (AN22HDX1)                           0.3110      4.5003 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/ctmi_3754/Q (ON221HDX1)                          0.4922      4.9926 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/ctmi_11660/Q (NA2I1HDX1)                         0.5810      5.5735 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/phfnr_buf_13525/Q (INHDX1)                       0.4780      6.0515 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/ctmi_11657/Q (NO2HDX2)                           1.7989      7.8504 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/phfnr_buf_13527/Q (INHDX1)                       0.9525      8.8029 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/ctmi_3801/Q (NA2HDX1)                            0.5961      9.3990 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/phfnr_buf_13529/Q (INHDX2)                       0.6551     10.0541 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/ctmi_3899/Q (AN22HDX1)                           0.8358     10.8899 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/ctmi_11667/Q (OR2HDX1)                           0.4231     11.3130 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/ctmi_4119/Q (NO2HDX1)                            0.1537     11.4667 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_3/CO (FAHDX0)          0.7536     12.2203 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_5/CO (FAHDX0)          0.7115     12.9318 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_8/CO (FAHDX0)          0.7143     13.6461 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_10/CO (FAHDX0)         0.7226     14.3687 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_13/CO (FAHDX0)         0.7289     15.0976 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_15/CO (FAHDX0)         0.7252     15.8228 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_18/CO (FAHDX0)         0.7202     16.5430 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_20/CO (FAHDX0)         0.7159     17.2589 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_23/CO (FAHDX0)         0.7170     17.9759 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_25/CO (FAHDX0)         0.7142     18.6901 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_28/CO (FAHDX0)         0.7111     19.4012 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_30/CO (FAHDX0)         0.7111     20.1123 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_33/CO (FAHDX0)         0.7187     20.8310 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_35/CO (FAHDX0)         0.7126     21.5436 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_38/CO (FAHDX0)         0.7226     22.2662 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_40/CO (FAHDX0)         0.7222     22.9883 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_43/CO (FAHDX0)         0.7219     23.7102 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_45/CO (FAHDX0)         0.7191     24.4293 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_48/CO (FAHDX0)         0.7127     25.1419 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_50/CO (FAHDX0)         0.7092     25.8512 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_53/CO (FAHDX0)         0.7149     26.5661 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_55/CO (FAHDX0)         0.7127     27.2788 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_58/S (FAHDX0)          0.9612     28.2400 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_221/CO (FAHDX0)        0.7919     29.0319 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_224/CO (FAHDX0)        0.7198     29.7517 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_226/CO (FAHDX0)        0.7277     30.4794 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_229/CO (FAHDX0)        0.7156     31.1950 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_231/CO (FAHDX0)        0.7218     31.9167 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_234/CO (FAHDX0)        0.7253     32.6420 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_236/CO (FAHDX0)        0.7194     33.3614 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_239/CO (FAHDX0)        0.6666     34.0280 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/ctmi_4227/Q (EO3HDX1)    0.8816     34.9096 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/ctmi_4192/Q (MU2HDX0)                            0.4900     35.3996 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/sum_out_reg[31]/D (SDFRRQSSHDX1)                 0.0001     35.3996 f
+  data arrival time                                                                                                                                   35.3996
+
+  clock clk_in (rise edge)                                                                                                               100.0000    100.0000
+  clock network delay (ideal)                                                                                                              0.0000    100.0000
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/sum_out_reg[31]/C (SDFRRQSSHDX1)                 0.0000    100.0000 r
+  library setup time                                                                                                                      -0.8874     99.1126
+  data required time                                                                                                                                  99.1126
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                                                                  99.1126
+  data arrival time                                                                                                                                  -35.3996
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                                                                         63.7129
+
+
+
+  Startpoint: u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/booth_mult.iter_cnt_reg[2] (rising edge-triggered flip-flop clocked by clk_in)
+  Endpoint: u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/sum_out_reg[31] (rising edge-triggered flip-flop clocked by clk_in)
+  Mode: FuncModeB0
+  Corner: max.SSG.1P62V-0P00V-0P00V-0P00V.M40C_FuncCmaxDP
+  Scenario: FuncModeB0::max.SSG.1P62V-0P00V-0P00V-0P00V.M40C_FuncCmaxDP
+  Path Group: clk_in
+  Path Type: max
+
+  Point                                                                                                                                     Incr        Path  
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  clock clk_in (rise edge)                                                                                                                 0.0000      0.0000
+  clock network delay (ideal)                                                                                                              0.0000      0.0000
+
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/booth_mult.iter_cnt_reg[2]/C (SDFRRHDX2)         0.0000      0.0000 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/booth_mult.iter_cnt_reg[2]/Q (SDFRRHDX2)         1.5826      1.5826 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/ctmi_3720/Q (NA2HDX1)                            1.1000      2.6826 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/ctmi_3734/Q (OA22HDX1)                           0.5380      3.2206 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/ctmi_3733/Q (ON221HDX1)                          0.2432      3.4638 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/ctmi_3730/Q (AN221HDX1)                          0.7275      4.1913 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/ctmi_3761/Q (AN22HDX1)                           0.3147      4.5061 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/ctmi_3754/Q (ON221HDX1)                          0.4190      4.9250 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/ctmi_11522/Q (NA2I1HDX1)                         0.5530      5.4780 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/phfnr_buf_13491/Q (INHDX1)                       0.4700      5.9480 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/ctmi_11519/Q (NO2HDX2)                           1.7953      7.7433 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/phfnr_buf_13493/Q (INHDX1)                       0.9380      8.6813 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/ctmi_3801/Q (NA2HDX1)                            0.6076      9.2888 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/phfnr_buf_13495/Q (INHDX2)                       0.6597      9.9485 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/ctmi_3899/Q (AN22HDX1)                           0.8023     10.7508 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/ctmi_11529/Q (OR2HDX1)                           0.4550     11.2059 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/ctmi_4119/Q (NO2HDX1)                            0.1736     11.3795 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_3/CO (FAHDX0)          0.7473     12.1267 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_5/CO (FAHDX0)          0.7175     12.8442 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_8/CO (FAHDX0)          0.7116     13.5558 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_10/CO (FAHDX0)         0.7234     14.2791 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_13/CO (FAHDX0)         0.7116     14.9908 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_15/CO (FAHDX0)         0.7066     15.6973 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_18/CO (FAHDX0)         0.7268     16.4242 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_20/CO (FAHDX0)         0.7305     17.1546 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_23/S (FAHDX0)          0.9986     18.1532 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_186/CO (FAHDX0)        0.7863     18.9395 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_189/CO (FAHDX0)        0.7138     19.6533 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_191/CO (FAHDX0)        0.7124     20.3658 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_194/CO (FAHDX0)        0.7108     21.0765 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_196/CO (FAHDX0)        0.7067     21.7833 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_199/CO (FAHDX0)        0.7092     22.4925 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_201/CO (FAHDX0)        0.7137     23.2062 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_204/CO (FAHDX0)        0.7104     23.9166 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_206/CO (FAHDX0)        0.7158     24.6324 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_209/CO (FAHDX0)        0.7138     25.3462 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_211/CO (FAHDX0)        0.7085     26.0546 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_214/CO (FAHDX0)        0.7072     26.7618 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_216/CO (FAHDX0)        0.7116     27.4734 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_219/CO (FAHDX0)        0.7145     28.1879 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_221/CO (FAHDX0)        0.7382     28.9262 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_224/CO (FAHDX0)        0.7214     29.6476 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_226/CO (FAHDX0)        0.7157     30.3633 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_229/CO (FAHDX0)        0.7110     31.0743 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_231/CO (FAHDX0)        0.7179     31.7922 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_234/CO (FAHDX0)        0.7175     32.5097 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_236/CO (FAHDX0)        0.7131     33.2228 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_239/CO (FAHDX0)        0.6596     33.8824 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/ctmi_4227/Q (EO3HDX1)    0.8921     34.7745 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/ctmi_4192/Q (MU2HDX0)                            0.4943     35.2688 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/sum_out_reg[31]/D (SDFRRQSSHDX1)                 0.0001     35.2688 f
+  data arrival time                                                                                                                                   35.2688
+
+  clock clk_in (rise edge)                                                                                                               100.0000    100.0000
+  clock network delay (ideal)                                                                                                              0.0000    100.0000
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/sum_out_reg[31]/C (SDFRRQSSHDX1)                 0.0000    100.0000 r
+  library setup time                                                                                                                      -0.8870     99.1130
+  data required time                                                                                                                                  99.1130
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                                                                  99.1130
+  data arrival time                                                                                                                                  -35.2688
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                                                                         63.8441
+
+
+
+  Startpoint: u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/booth_mult.iter_cnt_reg[2] (rising edge-triggered flip-flop clocked by clk_in)
+  Endpoint: u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/sum_out_reg[31] (rising edge-triggered flip-flop clocked by clk_in)
+  Mode: FuncModeB0
+  Corner: max.SSG.1P62V-0P00V-0P00V-0P00V.M40C_FuncCmaxDP
+  Scenario: FuncModeB0::max.SSG.1P62V-0P00V-0P00V-0P00V.M40C_FuncCmaxDP
+  Path Group: clk_in
+  Path Type: max
+
+  Point                                                                                                                                     Incr        Path  
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  clock clk_in (rise edge)                                                                                                                 0.0000      0.0000
+  clock network delay (ideal)                                                                                                              0.0000      0.0000
+
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/booth_mult.iter_cnt_reg[2]/C (SDFRRHDX2)         0.0000      0.0000 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/booth_mult.iter_cnt_reg[2]/Q (SDFRRHDX2)         1.5775      1.5775 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/ctmi_3720/Q (NA2HDX1)                            1.0362      2.6136 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/ctmi_3734/Q (OA22HDX1)                           0.5330      3.1466 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/ctmi_3733/Q (ON221HDX1)                          0.2270      3.3736 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/ctmi_3730/Q (AN221HDX1)                          0.7127      4.0863 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/ctmi_3761/Q (AN22HDX1)                           0.3184      4.4047 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/ctmi_3754/Q (ON221HDX1)                          0.4636      4.8683 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/ctmi_11430/Q (NA2I1HDX1)                         0.5648      5.4332 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/phfnr_buf_13423/Q (INHDX1)                       0.4721      5.9052 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/ctmi_11427/Q (NO2HDX2)                           1.8052      7.7105 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/phfnr_buf_13425/Q (INHDX1)                       0.9477      8.6582 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/ctmi_3801/Q (NA2HDX1)                            0.6419      9.3001 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/phfnr_buf_13427/Q (INHDX2)                       0.6774      9.9774 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/ctmi_3899/Q (AN22HDX1)                           0.8098     10.7872 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/ctmi_11437/Q (OR2HDX1)                           0.4150     11.2022 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/ctmi_4119/Q (NO2HDX1)                            0.1489     11.3512 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_3/CO (FAHDX0)          0.7546     12.1058 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_5/CO (FAHDX0)          0.7470     12.8527 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_8/CO (FAHDX0)          0.7221     13.5748 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_10/CO (FAHDX0)         0.7216     14.2964 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_13/CO (FAHDX0)         0.7375     15.0339 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_15/CO (FAHDX0)         0.7204     15.7543 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_18/CO (FAHDX0)         0.7151     16.4694 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_20/CO (FAHDX0)         0.7207     17.1901 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_23/CO (FAHDX0)         0.7201     17.9103 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_25/CO (FAHDX0)         0.7132     18.6234 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_28/CO (FAHDX0)         0.7157     19.3392 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_30/CO (FAHDX0)         0.7115     20.0507 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_33/CO (FAHDX0)         0.7113     20.7620 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_35/CO (FAHDX0)         0.7117     21.4737 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_38/CO (FAHDX0)         0.7173     22.1910 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_40/CO (FAHDX0)         0.7128     22.9038 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_43/CO (FAHDX0)         0.7155     23.6193 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_45/CO (FAHDX0)         0.7165     24.3358 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_48/CO (FAHDX0)         0.7123     25.0481 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_50/CO (FAHDX0)         0.7154     25.7636 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_53/CO (FAHDX0)         0.7179     26.4815 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_55/CO (FAHDX0)         0.7131     27.1946 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_58/CO (FAHDX0)         0.7134     27.9080 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_60/CO (FAHDX0)         0.7207     28.6287 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_63/CO (FAHDX0)         0.7140     29.3428 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_65/CO (FAHDX0)         0.7098     30.0525 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_68/CO (FAHDX0)         0.7098     30.7624 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_70/CO (FAHDX0)         0.7152     31.4776 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_73/CO (FAHDX0)         0.7078     32.1854 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_75/CO (FAHDX0)         0.6515     32.8369 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/ctmi_13716/Q (EO3HDX1)                           0.9258     33.7627 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/ctmi_4227/Q (EO3HDX1)    0.9884     34.7511 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/ctmi_4192/Q (MU2HDX0)                            0.4946     35.2457 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/sum_out_reg[31]/D (SDFRRQSSHDX1)                 0.0001     35.2458 f
+  data arrival time                                                                                                                                   35.2458
+
+  clock clk_in (rise edge)                                                                                                               100.0000    100.0000
+  clock network delay (ideal)                                                                                                              0.0000    100.0000
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/sum_out_reg[31]/C (SDFRRQSSHDX1)                 0.0000    100.0000 r
+  library setup time                                                                                                                      -0.8877     99.1123
+  data required time                                                                                                                                  99.1123
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                                                                  99.1123
+  data arrival time                                                                                                                                  -35.2458
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                                                                         63.8666
+
+
+
+  Startpoint: u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/booth_mult.iter_cnt_reg[2] (rising edge-triggered flip-flop clocked by clk_in)
+  Endpoint: u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/sum_out_reg[31] (rising edge-triggered flip-flop clocked by clk_in)
+  Mode: FuncModeB0
+  Corner: max.SSG.1P62V-0P00V-0P00V-0P00V.M40C_FuncCmaxDP
+  Scenario: FuncModeB0::max.SSG.1P62V-0P00V-0P00V-0P00V.M40C_FuncCmaxDP
+  Path Group: clk_in
+  Path Type: max
+
+  Point                                                                                                                                     Incr        Path  
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  clock clk_in (rise edge)                                                                                                                 0.0000      0.0000
+  clock network delay (ideal)                                                                                                              0.0000      0.0000
+
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/booth_mult.iter_cnt_reg[2]/C (SDFRRHDX2)         0.0000      0.0000 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/booth_mult.iter_cnt_reg[2]/Q (SDFRRHDX2)         1.5807      1.5807 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/ctmi_3720/Q (NA2HDX1)                            1.2510      2.8318 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/ctmi_3734/Q (OA22HDX1)                           0.5673      3.3991 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/ctmi_3733/Q (ON221HDX1)                          0.2785      3.6776 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/ctmi_3730/Q (AN221HDX1)                          0.7699      4.4475 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/ctmi_3761/Q (AN22HDX1)                           0.3215      4.7691 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/ctmi_3754/Q (ON221HDX1)                          0.3452      5.1142 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/ctmi_11614/Q (NA2I1HDX1)                         0.5090      5.6232 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/phfnr_buf_13593/Q (INHDX1)                       0.4508      6.0740 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/ctmi_11611/Q (NO2HDX2)                           1.8011      7.8752 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/phfnr_buf_13595/Q (INHDX1)                       0.9536      8.8287 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/ctmi_3801/Q (NA2HDX1)                            0.6428      9.4716 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/phfnr_buf_13597/Q (INHDX2)                       0.6788     10.1504 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/ctmi_3899/Q (AN22HDX1)                           0.7811     10.9315 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/ctmi_11621/Q (OR2HDX1)                           0.4071     11.3386 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/ctmi_4119/Q (NO2HDX1)                            0.1447     11.4832 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_3/CO (FAHDX0)          0.7538     12.2370 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_5/CO (FAHDX0)          0.7146     12.9516 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_8/CO (FAHDX0)          0.7112     13.6628 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_10/CO (FAHDX0)         0.7109     14.3738 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_13/CO (FAHDX0)         0.7131     15.0869 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_15/CO (FAHDX0)         0.7166     15.8035 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_18/CO (FAHDX0)         0.7127     16.5162 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_20/CO (FAHDX0)         0.7103     17.2265 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_23/CO (FAHDX0)         0.7184     17.9449 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_25/CO (FAHDX0)         0.7145     18.6594 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_28/CO (FAHDX0)         0.7132     19.3726 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_30/CO (FAHDX0)         0.7119     20.0846 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_33/CO (FAHDX0)         0.7130     20.7975 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_35/CO (FAHDX0)         0.7125     21.5100 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_38/CO (FAHDX0)         0.7192     22.2292 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_40/CO (FAHDX0)         0.7170     22.9463 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_43/CO (FAHDX0)         0.7122     23.6584 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_45/CO (FAHDX0)         0.7130     24.3714 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_48/CO (FAHDX0)         0.7140     25.0854 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_50/CO (FAHDX0)         0.7099     25.7953 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_53/CO (FAHDX0)         0.7093     26.5046 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_55/CO (FAHDX0)         0.7121     27.2167 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_58/CO (FAHDX0)         0.7106     27.9273 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_60/CO (FAHDX0)         0.7118     28.6391 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_63/CO (FAHDX0)         0.7104     29.3496 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_65/CO (FAHDX0)         0.7081     30.0577 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_68/CO (FAHDX0)         0.7125     30.7701 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_70/CO (FAHDX0)         0.7106     31.4807 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_73/S (FAHDX0)          0.9512     32.4319 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_236/CO (FAHDX0)        0.7698     33.2017 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_239/CO (FAHDX0)        0.6620     33.8637 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/ctmi_4227/Q (EO3HDX1)    0.8786     34.7423 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/ctmi_4192/Q (MU2HDX0)                            0.4953     35.2376 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/sum_out_reg[31]/D (SDFRRQSSHDX1)                 0.0001     35.2376 f
+  data arrival time                                                                                                                                   35.2376
+
+  clock clk_in (rise edge)                                                                                                               100.0000    100.0000
+  clock network delay (ideal)                                                                                                              0.0000    100.0000
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/sum_out_reg[31]/C (SDFRRQSSHDX1)                 0.0000    100.0000 r
+  library setup time                                                                                                                      -0.8894     99.1106
+  data required time                                                                                                                                  99.1106
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                                                                  99.1106
+  data arrival time                                                                                                                                  -35.2376
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                                                                         63.8730
+
+
+
+  Startpoint: u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/booth_mult.iter_cnt_reg[2] (rising edge-triggered flip-flop clocked by clk_in)
+  Endpoint: u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/sum_out_reg[31] (rising edge-triggered flip-flop clocked by clk_in)
+  Mode: FuncModeB0
+  Corner: max.SSG.1P62V-0P00V-0P00V-0P00V.M40C_FuncCmaxDP
+  Scenario: FuncModeB0::max.SSG.1P62V-0P00V-0P00V-0P00V.M40C_FuncCmaxDP
+  Path Group: clk_in
+  Path Type: max
+
+  Point                                                                                                                                     Incr        Path  
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  clock clk_in (rise edge)                                                                                                                 0.0000      0.0000
+  clock network delay (ideal)                                                                                                              0.0000      0.0000
+
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/booth_mult.iter_cnt_reg[2]/C (SDFRRHDX2)         0.0000      0.0000 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/booth_mult.iter_cnt_reg[2]/Q (SDFRRHDX2)         1.5768      1.5768 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/ctmi_3720/Q (NA2HDX1)                            1.0254      2.6022 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/ctmi_3734/Q (OA22HDX1)                           0.5265      3.1287 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/ctmi_3733/Q (ON221HDX1)                          0.2518      3.3805 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/ctmi_3730/Q (AN221HDX1)                          0.7400      4.1205 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/ctmi_3761/Q (AN22HDX1)                           0.3187      4.4392 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/ctmi_3754/Q (ON221HDX1)                          0.4667      4.9059 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/ctmi_11683/Q (NA2I1HDX1)                         0.5634      5.4692 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/phfnr_buf_13661/Q (INHDX1)                       0.4681      5.9373 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/ctmi_11680/Q (NO2HDX2)                           1.8024      7.7398 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/phfnr_buf_13663/Q (INHDX1)                       0.9392      8.6790 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/ctmi_3801/Q (NA2HDX1)                            0.6097      9.2887 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/phfnr_buf_13665/Q (INHDX2)                       0.6625      9.9512 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/ctmi_3899/Q (AN22HDX1)                           0.8294     10.7805 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/ctmi_11690/Q (OR2HDX1)                           0.4403     11.2208 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/ctmi_4119/Q (NO2HDX1)                            0.1673     11.3881 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_3/CO (FAHDX0)          0.7541     12.1422 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_5/CO (FAHDX0)          0.7086     12.8508 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_8/CO (FAHDX0)          0.7121     13.5628 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_10/CO (FAHDX0)         0.7152     14.2780 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_13/S (FAHDX0)          0.9463     15.2243 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_176/CO (FAHDX0)        0.7675     15.9918 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_179/CO (FAHDX0)        0.7069     16.6986 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_181/CO (FAHDX0)        0.7091     17.4077 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_184/CO (FAHDX0)        0.7152     18.1229 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_186/CO (FAHDX0)        0.7134     18.8363 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_189/CO (FAHDX0)        0.7130     19.5493 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_191/CO (FAHDX0)        0.7177     20.2670 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_194/CO (FAHDX0)        0.7302     20.9972 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_196/CO (FAHDX0)        0.7194     21.7166 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_199/CO (FAHDX0)        0.7229     22.4395 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_201/CO (FAHDX0)        0.7348     23.1743 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_204/CO (FAHDX0)        0.7185     23.8928 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_206/CO (FAHDX0)        0.7110     24.6038 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_209/CO (FAHDX0)        0.7118     25.3156 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_211/CO (FAHDX0)        0.7127     26.0283 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_214/CO (FAHDX0)        0.7101     26.7383 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_216/CO (FAHDX0)        0.7129     27.4512 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_219/CO (FAHDX0)        0.7104     28.1616 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_221/CO (FAHDX0)        0.7100     28.8716 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_224/CO (FAHDX0)        0.7216     29.5932 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_226/CO (FAHDX0)        0.7305     30.3237 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_229/CO (FAHDX0)        0.7190     31.0427 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_231/CO (FAHDX0)        0.7135     31.7562 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_234/CO (FAHDX0)        0.7098     32.4660 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_236/CO (FAHDX0)        0.7109     33.1769 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_239/CO (FAHDX0)        0.6709     33.8478 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/ctmi_4227/Q (EO3HDX1)    0.8837     34.7316 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/ctmi_4192/Q (MU2HDX0)                            0.4960     35.2276 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/sum_out_reg[31]/D (SDFRRQSSHDX1)                 0.0001     35.2276 f
+  data arrival time                                                                                                                                   35.2276
+
+  clock clk_in (rise edge)                                                                                                               100.0000    100.0000
+  clock network delay (ideal)                                                                                                              0.0000    100.0000
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/sum_out_reg[31]/C (SDFRRQSSHDX1)                 0.0000    100.0000 r
+  library setup time                                                                                                                      -0.8894     99.1106
+  data required time                                                                                                                                  99.1106
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                                                                  99.1106
+  data arrival time                                                                                                                                  -35.2276
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                                                                         63.8830
+
+
+
+  Startpoint: u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/booth_mult.iter_cnt_reg[2] (rising edge-triggered flip-flop clocked by clk_in)
+  Endpoint: u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/sum_out_reg[31] (rising edge-triggered flip-flop clocked by clk_in)
+  Mode: FuncModeB0
+  Corner: max.SSG.1P62V-0P00V-0P00V-0P00V.M40C_FuncCmaxDP
+  Scenario: FuncModeB0::max.SSG.1P62V-0P00V-0P00V-0P00V.M40C_FuncCmaxDP
+  Path Group: clk_in
+  Path Type: max
+
+  Point                                                                                                                                     Incr        Path  
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  clock clk_in (rise edge)                                                                                                                 0.0000      0.0000
+  clock network delay (ideal)                                                                                                              0.0000      0.0000
+
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/booth_mult.iter_cnt_reg[2]/C (SDFRRHDX2)         0.0000      0.0000 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/booth_mult.iter_cnt_reg[2]/Q (SDFRRHDX2)         1.5767      1.5767 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/ctmi_3720/Q (NA2HDX1)                            1.0852      2.6619 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/ctmi_3734/Q (OA22HDX1)                           0.5402      3.2021 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/ctmi_3733/Q (ON221HDX1)                          0.2277      3.4298 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/ctmi_3730/Q (AN221HDX1)                          0.7183      4.1481 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/ctmi_3761/Q (AN22HDX1)                           0.3136      4.4617 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/ctmi_3754/Q (ON221HDX1)                          0.3947      4.8563 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/ctmi_11545/Q (NA2I1HDX1)                         0.5509      5.4072 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/phfnr_buf_13508/Q (INHDX1)                       0.4686      5.8758 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/ctmi_11542/Q (NO2HDX2)                           1.8195      7.6954 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/phfnr_buf_13510/Q (INHDX1)                       0.9551      8.6505 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/ctmi_3801/Q (NA2HDX1)                            0.6334      9.2839 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/phfnr_buf_13512/Q (INHDX2)                       0.6780      9.9619 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/ctmi_3899/Q (AN22HDX1)                           0.7796     10.7415 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/ctmi_11552/Q (OR2HDX1)                           0.4080     11.1495 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/ctmi_4119/Q (NO2HDX1)                            0.1534     11.3029 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_3/CO (FAHDX0)          0.7499     12.0528 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_5/CO (FAHDX0)          0.7127     12.7655 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_8/CO (FAHDX0)          0.7112     13.4767 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_10/CO (FAHDX0)         0.7171     14.1938 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_13/CO (FAHDX0)         0.7135     14.9074 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_15/CO (FAHDX0)         0.7180     15.6254 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_18/CO (FAHDX0)         0.7174     16.3428 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_20/CO (FAHDX0)         0.7159     17.0587 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_23/CO (FAHDX0)         0.7133     17.7720 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_25/CO (FAHDX0)         0.7139     18.4859 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_28/CO (FAHDX0)         0.7118     19.1977 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_30/CO (FAHDX0)         0.7178     19.9155 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_33/CO (FAHDX0)         0.7154     20.6308 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_35/S (FAHDX0)          0.9793     21.6101 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_199/CO (FAHDX0)        0.7802     22.3903 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_201/CO (FAHDX0)        0.7151     23.1054 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_204/CO (FAHDX0)        0.7158     23.8212 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_206/CO (FAHDX0)        0.7163     24.5374 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_209/CO (FAHDX0)        0.7173     25.2547 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_211/CO (FAHDX0)        0.7143     25.9690 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_214/CO (FAHDX0)        0.7154     26.6844 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_216/CO (FAHDX0)        0.7155     27.3999 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_219/CO (FAHDX0)        0.7080     28.1080 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_221/CO (FAHDX0)        0.7044     28.8124 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_224/CO (FAHDX0)        0.7123     29.5247 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_226/CO (FAHDX0)        0.7133     30.2380 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_229/CO (FAHDX0)        0.7146     30.9526 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_231/CO (FAHDX0)        0.7187     31.6712 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_234/CO (FAHDX0)        0.7144     32.3857 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_236/CO (FAHDX0)        0.7146     33.1003 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_239/CO (FAHDX0)        0.6660     33.7663 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/DP_OP_46_42816_63710_J3/ctmi_4227/Q (EO3HDX1)    0.8918     34.6581 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/ctmi_4192/Q (MU2HDX0)                            0.4940     35.1521 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/sum_out_reg[31]/D (SDFRRQSSHDX1)                 0.0001     35.1522 f
+  data arrival time                                                                                                                                   35.1522
+
+  clock clk_in (rise edge)                                                                                                               100.0000    100.0000
+  clock network delay (ideal)                                                                                                              0.0000    100.0000
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/sum_out_reg[31]/C (SDFRRQSSHDX1)                 0.0000    100.0000 r
+  library setup time                                                                                                                      -0.8874     99.1126
+  data required time                                                                                                                                  99.1126
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                                                                  99.1126
+  data arrival time                                                                                                                                  -35.1522
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                                                                         63.9604
+
+
+
+  Startpoint: u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/booth_mult.iter_cnt_reg[2] (rising edge-triggered flip-flop clocked by clk_in)
+  Endpoint: u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/sum_out_reg[31] (rising edge-triggered flip-flop clocked by clk_in)
+  Mode: FuncModeB0
+  Corner: max.SSG.1P62V-0P00V-0P00V-0P00V.M40C_FuncCmaxDP
+  Scenario: FuncModeB0::max.SSG.1P62V-0P00V-0P00V-0P00V.M40C_FuncCmaxDP
+  Path Group: clk_in
+  Path Type: max
+
+  Point                                                                                                                                     Incr        Path  
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  clock clk_in (rise edge)                                                                                                                 0.0000      0.0000
+  clock network delay (ideal)                                                                                                              0.0000      0.0000
+
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/booth_mult.iter_cnt_reg[2]/C (SDFRRHDX2)         0.0000      0.0000 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/booth_mult.iter_cnt_reg[2]/Q (SDFRRHDX2)         1.5770      1.5770 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/ctmi_3720/Q (NA2HDX1)                            1.0774      2.6544 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/ctmi_3734/Q (OA22HDX1)                           0.5397      3.1940 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/ctmi_3733/Q (ON221HDX1)                          0.2189      3.4130 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/ctmi_3730/Q (AN221HDX1)                          0.7533      4.1663 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/ctmi_3761/Q (AN22HDX1)                           0.3428      4.5090 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/ctmi_3754/Q (ON221HDX1)                          0.4201      4.9292 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/ctmi_11637/Q (NA2I1HDX1)                         0.5391      5.4683 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/phfnr_buf_13627/Q (INHDX1)                       0.4655      5.9338 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/ctmi_11634/Q (NO2HDX2)                           1.7870      7.7208 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/phfnr_buf_13629/Q (INHDX1)                       0.9356      8.6564 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/ctmi_3801/Q (NA2HDX1)                            0.5860      9.2424 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/phfnr_buf_13631/Q (INHDX2)                       0.6459      9.8883 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/ctmi_3899/Q (AN22HDX1)                           0.8023     10.6906 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/ctmi_11644/Q (OR2HDX1)                           0.4288     11.1194 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/ctmi_4119/Q (NO2HDX1)                            0.1579     11.2773 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_3/CO (FAHDX0)          0.7475     12.0249 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_5/S (FAHDX0)           1.0144     13.0393 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_169/CO (FAHDX0)        0.7984     13.8377 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_171/CO (FAHDX0)        0.7114     14.5491 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_174/CO (FAHDX0)        0.7094     15.2585 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_176/CO (FAHDX0)        0.7098     15.9683 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_179/CO (FAHDX0)        0.7114     16.6797 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_181/CO (FAHDX0)        0.7133     17.3930 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_184/CO (FAHDX0)        0.7158     18.1088 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_186/CO (FAHDX0)        0.7106     18.8194 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_189/CO (FAHDX0)        0.7127     19.5321 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_191/CO (FAHDX0)        0.7140     20.2461 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_194/CO (FAHDX0)        0.7113     20.9573 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_196/CO (FAHDX0)        0.7095     21.6668 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_199/CO (FAHDX0)        0.7086     22.3754 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_201/CO (FAHDX0)        0.7093     23.0847 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_204/CO (FAHDX0)        0.7069     23.7916 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_206/CO (FAHDX0)        0.7118     24.5034 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_209/CO (FAHDX0)        0.7150     25.2183 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_211/CO (FAHDX0)        0.7117     25.9301 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_214/CO (FAHDX0)        0.7269     26.6570 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_216/CO (FAHDX0)        0.7198     27.3768 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_219/CO (FAHDX0)        0.7112     28.0880 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_221/CO (FAHDX0)        0.7080     28.7960 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_224/CO (FAHDX0)        0.7075     29.5035 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_226/CO (FAHDX0)        0.7223     30.2258 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_229/CO (FAHDX0)        0.7125     30.9383 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_231/CO (FAHDX0)        0.7070     31.6454 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_234/CO (FAHDX0)        0.7078     32.3532 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_236/CO (FAHDX0)        0.7087     33.0619 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_239/CO (FAHDX0)        0.6590     33.7209 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/ctmi_4227/Q (EO3HDX1)    0.8848     34.6056 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/ctmi_4192/Q (MU2HDX0)                            0.4914     35.0971 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/sum_out_reg[31]/D (SDFRRQSSHDX1)                 0.0001     35.0971 f
+  data arrival time                                                                                                                                   35.0971
+
+  clock clk_in (rise edge)                                                                                                               100.0000    100.0000
+  clock network delay (ideal)                                                                                                              0.0000    100.0000
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/sum_out_reg[31]/C (SDFRRQSSHDX1)                 0.0000    100.0000 r
+  library setup time                                                                                                                      -0.8875     99.1125
+  data required time                                                                                                                                  99.1125
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                                                                  99.1125
+  data arrival time                                                                                                                                  -35.0971
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                                                                         64.0154
+
+
+
+  Startpoint: u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/booth_mult.iter_cnt_reg[2] (rising edge-triggered flip-flop clocked by clk_in)
+  Endpoint: u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/sum_out_reg[31] (rising edge-triggered flip-flop clocked by clk_in)
+  Mode: FuncModeB0
+  Corner: max.SSG.1P62V-0P00V-0P00V-0P00V.M40C_FuncCmaxDP
+  Scenario: FuncModeB0::max.SSG.1P62V-0P00V-0P00V-0P00V.M40C_FuncCmaxDP
+  Path Group: clk_in
+  Path Type: max
+
+  Point                                                                                                                                     Incr        Path  
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  clock clk_in (rise edge)                                                                                                                 0.0000      0.0000
+  clock network delay (ideal)                                                                                                              0.0000      0.0000
+
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/booth_mult.iter_cnt_reg[2]/C (SDFRRHDX2)         0.0000      0.0000 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/booth_mult.iter_cnt_reg[2]/Q (SDFRRHDX2)         1.5782      1.5782 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/ctmi_3720/Q (NA2HDX1)                            1.1322      2.7103 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/ctmi_3734/Q (OA22HDX1)                           0.5421      3.2524 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/ctmi_3733/Q (ON221HDX1)                          0.2457      3.4981 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/ctmi_3730/Q (AN221HDX1)                          0.7424      4.2405 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/ctmi_3761/Q (AN22HDX1)                           0.3106      4.5511 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/ctmi_3754/Q (ON221HDX1)                          0.3489      4.9000 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/ctmi_11568/Q (NA2I1HDX1)                         0.5253      5.4253 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/phfnr_buf_13559/Q (INHDX1)                       0.4599      5.8852 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/ctmi_11565/Q (NO2HDX2)                           1.7904      7.6756 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/phfnr_buf_13561/Q (INHDX1)                       0.9559      8.6315 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/ctmi_3801/Q (NA2HDX1)                            0.6593      9.2908 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/phfnr_buf_13563/Q (INHDX2)                       0.6832      9.9739 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/ctmi_3899/Q (AN22HDX1)                           0.7845     10.7584 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/ctmi_11575/Q (OR2HDX1)                           0.4087     11.1672 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/ctmi_4119/Q (NO2HDX1)                            0.1452     11.3124 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_3/CO (FAHDX0)          0.7434     12.0558 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_5/CO (FAHDX0)          0.7129     12.7687 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_8/CO (FAHDX0)          0.7110     13.4797 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_10/CO (FAHDX0)         0.7151     14.1948 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_13/CO (FAHDX0)         0.7121     14.9070 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_15/CO (FAHDX0)         0.7095     15.6165 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_18/CO (FAHDX0)         0.7103     16.3268 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_20/CO (FAHDX0)         0.7091     17.0359 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_23/CO (FAHDX0)         0.7107     17.7467 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_25/CO (FAHDX0)         0.7087     18.4554 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_28/CO (FAHDX0)         0.7075     19.1629 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_30/CO (FAHDX0)         0.7098     19.8726 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_33/CO (FAHDX0)         0.7110     20.5836 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_35/CO (FAHDX0)         0.7128     21.2965 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_38/CO (FAHDX0)         0.7142     22.0106 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_40/CO (FAHDX0)         0.7131     22.7237 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_43/CO (FAHDX0)         0.7139     23.4376 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_45/CO (FAHDX0)         0.7124     24.1500 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_48/CO (FAHDX0)         0.7135     24.8635 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_50/CO (FAHDX0)         0.7150     25.5784 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_53/CO (FAHDX0)         0.7128     26.2912 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_55/CO (FAHDX0)         0.7115     27.0028 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_58/CO (FAHDX0)         0.7136     27.7164 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_60/CO (FAHDX0)         0.7159     28.4322 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_63/CO (FAHDX0)         0.7088     29.1410 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_65/CO (FAHDX0)         0.7074     29.8484 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_68/CO (FAHDX0)         0.7112     30.5596 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_70/CO (FAHDX0)         0.7094     31.2690 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_73/CO (FAHDX0)         0.7087     31.9777 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_75/CO (FAHDX0)         0.6487     32.6264 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/ctmi_13723/Q (EO3HDX1)                           0.9548     33.5812 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/DP_OP_46_42816_63710_J3/ctmi_4227/Q (EO3HDX1)    1.0048     34.5860 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/ctmi_4192/Q (MU2HDX0)                            0.4965     35.0826 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/sum_out_reg[31]/D (SDFRRQSSHDX1)                 0.0001     35.0826 f
+  data arrival time                                                                                                                                   35.0826
+
+  clock clk_in (rise edge)                                                                                                               100.0000    100.0000
+  clock network delay (ideal)                                                                                                              0.0000    100.0000
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/sum_out_reg[31]/C (SDFRRQSSHDX1)                 0.0000    100.0000 r
+  library setup time                                                                                                                      -0.8879     99.1121
+  data required time                                                                                                                                  99.1121
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                                                                  99.1121
+  data arrival time                                                                                                                                  -35.0826
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                                                                         64.0295
+
+
+
+  Startpoint: u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/booth_mult.iter_cnt_reg[2] (rising edge-triggered flip-flop clocked by clk_in)
+  Endpoint: u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/sum_out_reg[31] (rising edge-triggered flip-flop clocked by clk_in)
+  Mode: FuncModeB0
+  Corner: max.SSG.1P62V-0P00V-0P00V-0P00V.M40C_FuncCmaxDP
+  Scenario: FuncModeB0::max.SSG.1P62V-0P00V-0P00V-0P00V.M40C_FuncCmaxDP
+  Path Group: clk_in
+  Path Type: max
+
+  Point                                                                                                                                     Incr        Path  
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  clock clk_in (rise edge)                                                                                                                 0.0000      0.0000
+  clock network delay (ideal)                                                                                                              0.0000      0.0000
+
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/booth_mult.iter_cnt_reg[2]/C (SDFRRHDX2)         0.0000      0.0000 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/booth_mult.iter_cnt_reg[2]/Q (SDFRRHDX2)         1.5745      1.5745 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/ctmi_3720/Q (NA2HDX1)                            1.0532      2.6277 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/ctmi_3734/Q (OA22HDX1)                           0.5347      3.1624 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/ctmi_3733/Q (ON221HDX1)                          0.2350      3.3974 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/ctmi_3730/Q (AN221HDX1)                          0.7274      4.1248 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/ctmi_3761/Q (AN22HDX1)                           0.3137      4.4386 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/ctmi_3754/Q (ON221HDX1)                          0.4330      4.8716 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/ctmi_11476/Q (NA2I1HDX1)                         0.5462      5.4178 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/phfnr_buf_13644/Q (INHDX1)                       0.4659      5.8836 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/ctmi_11473/Q (NO2HDX2)                           1.8116      7.6953 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/phfnr_buf_13646/Q (INHDX1)                       0.9426      8.6379 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/ctmi_3801/Q (NA2HDX1)                            0.6506      9.2885 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/phfnr_buf_13648/Q (INHDX2)                       0.6885      9.9769 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/ctmi_3899/Q (AN22HDX1)                           0.7789     10.7558 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/ctmi_11483/Q (OR2HDX1)                           0.4149     11.1707 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/ctmi_4119/Q (NO2HDX1)                            0.1711     11.3418 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_3/CO (FAHDX0)          0.7531     12.0949 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_5/CO (FAHDX0)          0.7056     12.8006 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_8/CO (FAHDX0)          0.7062     13.5068 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_10/CO (FAHDX0)         0.7133     14.2201 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_13/CO (FAHDX0)         0.7107     14.9308 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_15/CO (FAHDX0)         0.7101     15.6409 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_18/CO (FAHDX0)         0.7154     16.3563 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_20/CO (FAHDX0)         0.7079     17.0642 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_23/CO (FAHDX0)         0.7099     17.7741 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_25/CO (FAHDX0)         0.7091     18.4832 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_28/CO (FAHDX0)         0.7065     19.1897 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_30/CO (FAHDX0)         0.7075     19.8973 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_33/CO (FAHDX0)         0.7113     20.6086 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_35/CO (FAHDX0)         0.7068     21.3154 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_38/CO (FAHDX0)         0.7070     22.0224 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_40/CO (FAHDX0)         0.7099     22.7323 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_43/CO (FAHDX0)         0.7140     23.4463 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_45/CO (FAHDX0)         0.7129     24.1592 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_48/CO (FAHDX0)         0.7094     24.8686 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_50/CO (FAHDX0)         0.7125     25.5811 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_53/CO (FAHDX0)         0.7199     26.3010 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_55/S (FAHDX0)          0.9527     27.2537 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_219/CO (FAHDX0)        0.7696     28.0232 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_221/CO (FAHDX0)        0.7080     28.7313 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_224/CO (FAHDX0)        0.7064     29.4377 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_226/CO (FAHDX0)        0.7067     30.1444 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_229/CO (FAHDX0)        0.7068     30.8512 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_231/CO (FAHDX0)        0.7106     31.5617 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_234/CO (FAHDX0)        0.7104     32.2722 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_236/CO (FAHDX0)        0.7093     32.9815 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_239/CO (FAHDX0)        0.6715     33.6530 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/DP_OP_46_42816_63710_J3/ctmi_4227/Q (EO3HDX1)    0.8842     34.5372 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/ctmi_4192/Q (MU2HDX0)                            0.4923     35.0295 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/sum_out_reg[31]/D (SDFRRQSSHDX1)                 0.0001     35.0296 f
+  data arrival time                                                                                                                                   35.0296
+
+  clock clk_in (rise edge)                                                                                                               100.0000    100.0000
+  clock network delay (ideal)                                                                                                              0.0000    100.0000
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC/sum_out_reg[31]/C (SDFRRQSSHDX1)                 0.0000    100.0000 r
+  library setup time                                                                                                                      -0.8883     99.1117
+  data required time                                                                                                                                  99.1117
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                                                                  99.1117
+  data arrival time                                                                                                                                  -35.0296
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                                                                         64.0821
+
+
+
+  Startpoint: u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/booth_mult.iter_cnt_reg[2] (rising edge-triggered flip-flop clocked by clk_in)
+  Endpoint: u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/sum_out_reg[31] (rising edge-triggered flip-flop clocked by clk_in)
+  Mode: FuncModeB0
+  Corner: max.SSG.1P62V-0P00V-0P00V-0P00V.M40C_FuncCmaxDP
+  Scenario: FuncModeB0::max.SSG.1P62V-0P00V-0P00V-0P00V.M40C_FuncCmaxDP
+  Path Group: clk_in
+  Path Type: max
+
+  Point                                                                                                                                     Incr        Path  
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  clock clk_in (rise edge)                                                                                                                 0.0000      0.0000
+  clock network delay (ideal)                                                                                                              0.0000      0.0000
+
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/booth_mult.iter_cnt_reg[2]/C (SDFRRHDX2)         0.0000      0.0000 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/booth_mult.iter_cnt_reg[2]/Q (SDFRRHDX2)         1.5751      1.5751 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/ctmi_3720/Q (NA2HDX1)                            1.0429      2.6180 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/ctmi_3734/Q (OA22HDX1)                           0.5393      3.1573 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/ctmi_3733/Q (ON221HDX1)                          0.2180      3.3753 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/ctmi_3730/Q (AN221HDX1)                          0.7112      4.0865 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/ctmi_3761/Q (AN22HDX1)                           0.3113      4.3979 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/ctmi_3754/Q (ON221HDX1)                          0.4098      4.8077 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/ctmi_11499/Q (NA2I1HDX1)                         0.5471      5.3547 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/phfnr_buf_13457/Q (INHDX1)                       0.4635      5.8183 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/ctmi_11496/Q (NO2HDX2)                           1.7850      7.6033 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/phfnr_buf_13459/Q (INHDX1)                       0.9393      8.5427 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/ctmi_3801/Q (NA2HDX1)                            0.5866      9.1293 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/phfnr_buf_13461/Q (INHDX2)                       0.6467      9.7760 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/ctmi_3899/Q (AN22HDX1)                           0.8121     10.5881 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/ctmi_11506/Q (OR2HDX1)                           0.4162     11.0043 r
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/ctmi_4119/Q (NO2HDX1)                            0.1592     11.1635 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_3/CO (FAHDX0)          0.7562     11.9197 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_5/CO (FAHDX0)          0.7147     12.6344 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_8/CO (FAHDX0)          0.7145     13.3489 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_10/S (FAHDX0)          0.9957     14.3445 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_174/CO (FAHDX0)        0.7883     15.1328 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_176/CO (FAHDX0)        0.7112     15.8440 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_179/CO (FAHDX0)        0.7183     16.5623 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_181/CO (FAHDX0)        0.7174     17.2797 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_184/CO (FAHDX0)        0.7131     17.9928 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_186/CO (FAHDX0)        0.7150     18.7078 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_189/CO (FAHDX0)        0.7133     19.4211 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_191/CO (FAHDX0)        0.7132     20.1343 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_194/CO (FAHDX0)        0.7123     20.8466 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_196/CO (FAHDX0)        0.7115     21.5580 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_199/CO (FAHDX0)        0.7117     22.2697 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_201/CO (FAHDX0)        0.7106     22.9803 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_204/CO (FAHDX0)        0.7111     23.6914 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_206/CO (FAHDX0)        0.7097     24.4011 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_209/CO (FAHDX0)        0.7099     25.1110 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_211/CO (FAHDX0)        0.7093     25.8202 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_214/CO (FAHDX0)        0.7114     26.5317 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_216/CO (FAHDX0)        0.7146     27.2462 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_219/CO (FAHDX0)        0.7170     27.9632 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_221/CO (FAHDX0)        0.7138     28.6770 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_224/CO (FAHDX0)        0.7120     29.3889 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_226/CO (FAHDX0)        0.7105     30.0994 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_229/CO (FAHDX0)        0.7120     30.8114 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_231/CO (FAHDX0)        0.7095     31.5209 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_234/CO (FAHDX0)        0.7229     32.2438 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_236/CO (FAHDX0)        0.7183     32.9621 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/U_239/CO (FAHDX0)        0.6643     33.6264 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/DP_OP_46_42816_63710_J3/ctmi_4227/Q (EO3HDX1)    0.8904     34.5168 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/ctmi_4192/Q (MU2HDX0)                            0.4989     35.0158 f
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/sum_out_reg[31]/D (SDFRRQSSHDX1)                 0.0001     35.0158 f
+  data arrival time                                                                                                                                   35.0158
+
+  clock clk_in (rise edge)                                                                                                               100.0000    100.0000
+  clock network delay (ideal)                                                                                                              0.0000    100.0000
+  u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC/sum_out_reg[31]/C (SDFRRQSSHDX1)                 0.0000    100.0000 r
+  library setup time                                                                                                                      -0.8889     99.1111
+  data required time                                                                                                                                  99.1111
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                                                                  99.1111
+  data arrival time                                                                                                                                  -35.0158
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                                                                         64.0953
+
+
+1

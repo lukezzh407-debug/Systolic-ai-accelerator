@@ -1,0 +1,9 @@
+# Local / proprietary — never publish
+xh018/
+work/
+*.ndm
+*.svf
+*.v.gz
+*.log
+.DS_Store
+Thumbs.db

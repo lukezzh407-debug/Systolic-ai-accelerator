@@ -1,0 +1,1 @@
+module load synopsys/fusioncompiler/X-2025.06-SP3

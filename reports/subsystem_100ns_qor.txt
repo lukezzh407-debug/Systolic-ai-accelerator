@@ -1,0 +1,89 @@
+****************************************
+Report : qor
+Design : subsystem
+Version: X-2025.06-SP3
+Date   : Mon Sep 14 18:34:08 2026
+****************************************
+
+
+Scenario           'FuncModeB0::max.SSG.1P62V-0P00V-0P00V-0P00V.M40C_FuncCmaxDP'
+Timing Path Group  '**in2reg_default**'
+----------------------------------------
+Levels of Logic:                      8
+Critical Path Length:             16.60
+Critical Path Slack:              81.69
+Critical Path Clk Period:        100.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+----------------------------------------
+
+Scenario           'FuncModeB0::max.SSG.1P62V-0P00V-0P00V-0P00V.M40C_FuncCmaxDP'
+Timing Path Group  'clk_in'
+----------------------------------------
+Levels of Logic:                     48
+Critical Path Length:             35.40
+Critical Path Slack:              63.71
+Critical Path Clk Period:        100.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+
+Cell Count
+----------------------------------------
+Hierarchical Cell Count:             34
+Hierarchical Port Count:           6389
+Leaf Cell Count:                 126257
+Buf/Inv Cell Count:                 924
+Buf Cell Count:                       0
+Inv Cell Count:                     924
+Combinational Cell Count:         53823
+   Single-bit Isolation Cell Count:                        0
+   Multi-bit Isolation Cell Count:                         0
+   Isolation Cell Banking Ratio:                           0.00%
+   Single-bit Level Shifter Cell Count:                    0
+   Multi-bit Level Shifter Cell Count:                     0
+   Level Shifter Cell Banking Ratio:                       0.00%
+   Single-bit ELS Cell Count:                              0
+   Multi-bit ELS Cell Count:                               0
+   ELS Cell Banking Ratio:                                 0.00%
+Sequential Cell Count:            72434
+   Integrated Clock-Gating Cell Count:                     2187
+   Sequential Macro Cell Count:                            0
+   Single-bit Sequential Cell Count:                       70247
+   Multi-bit Sequential Cell Count:                        0
+   Sequential Cell Banking Ratio:                          0.00%
+   BitsPerflop:                                            1.00
+Macro Count:                          0
+----------------------------------------
+
+
+Area
+----------------------------------------
+Combinational Area:           889703.27
+Noncombinational Area:       4518311.17
+Buf/Inv Area:                  13733.17
+Total Buffer Area:                 0.00
+Total Inverter Area:           13733.17
+Macro/Black Box Area:              0.00
+Net Area:                             0
+Net XLength:                 2595486.60
+Net YLength:                 2450541.62
+----------------------------------------
+Cell Area (netlist):                        5408014.44
+Cell Area (netlist and physical only):      5408014.44
+Net Length:                  5046028.23
+
+
+Design Rules
+----------------------------------------
+Total Number of Nets:            127583
+Nets with Violations:              1412
+Max Trans Violations:                 0
+Max Cap Violations:                1412
+----------------------------------------
+
+1

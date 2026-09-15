@@ -1,0 +1,80 @@
+****************************************
+Report : power
+        -significant_digits 2
+Design : subsystem
+Version: X-2025.06-SP3
+Date   : Mon Sep 14 18:33:50 2026
+****************************************
+Information: Activity propagation will be performed for scenario FuncModeB0::max.SSG.1P62V-0P00V-0P00V-0P00V.M40C_FuncCmaxDP.
+Information: Doing activity propagation for mode 'FuncModeB0' and corner 'max.SSG.1P62V-0P00V-0P00V-0P00V.M40C_FuncCmaxDP' with effort level 'medium'. (POW-024)
+Information: Timer-derived activity data is cached on scenario FuncModeB0::max.SSG.1P62V-0P00V-0P00V-0P00V.M40C_FuncCmaxDP (POW-052)
+Infomation: Fast mode activity propagation power.rtl_activity_annotation setup is ignored. Always use accurate mode.
+Information: Running switching activity propagation with 6 threads!
+
+ **** Information : No. of simulation cycles = 8 ****
+Mode: FuncModeB0
+Corner: max.SSG.1P62V-0P00V-0P00V-0P00V.M40C_FuncCmaxDP
+Scenario: FuncModeB0::max.SSG.1P62V-0P00V-0P00V-0P00V.M40C_FuncCmaxDP
+Voltage: 1.62
+Temperature: -40.00
+
+Voltage Unit         : 1V
+Capacitance Unit     : 1pF
+Time Unit            : 1ns
+Temperature Unit     : 1C
+Dynamic Power Unit   : 1pW
+Leakage Power Unit   : 1pW
+
+Switched supply net power scaling:
+scaling for leakage power
+
+Supply nets:
+VDD (power) probability 1.00 (default)
+VSS (ground) probability 1.00 (default)
+Warning: Power table extrapolation (extrapolation mode) for port RN on cell u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/config_reg_reg[10] for parameter Tinp. Lowest table value = 0.015000, highest table value = 6.907200, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port RN on cell u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/config_reg_reg[9] for parameter Tinp. Lowest table value = 0.015000, highest table value = 6.907200, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port RN on cell u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/config_reg_reg[8] for parameter Tinp. Lowest table value = 0.015000, highest table value = 6.907200, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port RN on cell u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/config_reg_reg[7] for parameter Tinp. Lowest table value = 0.015000, highest table value = 6.907200, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port RN on cell u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/config_reg_reg[6] for parameter Tinp. Lowest table value = 0.015000, highest table value = 6.907200, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port RN on cell u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/config_reg_reg[5] for parameter Tinp. Lowest table value = 0.015000, highest table value = 6.907200, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port B on cell u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/ctmi_3706 for parameter Tinp. Lowest table value = inf, highest table value = inf, value = 1.553421 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port B on cell u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/ctmi_3706 for parameter Tinp. Lowest table value = inf, highest table value = inf, value = 1.557922 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port B on cell u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/ctmi_3706 for parameter Cout. Lowest table value = inf, highest table value = inf, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port B on cell u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/ctmi_3706 for parameter Cout. Lowest table value = inf, highest table value = inf, value = 0.000000 (POW-046)
+Note - message 'POW-046' limit (10) exceeded. Remainder will be suppressed.
+Warning: Fall toggles on pin u_AI_ACC_TOP/u_SA2APB_DATA_PROC/row_sel_reg[0]/QN are impossible given input states; converted to rise toggles. (POW-069)
+Warning: Fall toggles on pin u_AI_ACC_TOP/u_SA2APB_DATA_PROC/counter_reg[0]/QN are impossible given input states; converted to rise toggles. (POW-069)
+Warning: Fall toggles on pin u_AI_ACC_TOP/u_SYSTOLIC_ARRAY_CONTROLLER/step_cnt_reg[1]/QN are impossible given input states; converted to rise toggles. (POW-069)
+Warning: Fall toggles on pin u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/unpack_buf_reg[21]/QN are impossible given input states; converted to rise toggles. (POW-069)
+Warning: Fall toggles on pin u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/unpack_buf_reg[20]/QN are impossible given input states; converted to rise toggles. (POW-069)
+Warning: Fall toggles on pin u_AI_ACC_TOP/u_SYSTOLIC_ARRAY_CONTROLLER/step_cnt_reg[2]/QN are impossible given input states; converted to rise toggles. (POW-069)
+Warning: Fall toggles on pin u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/is_unpacking_reg/QN are impossible given input states; converted to rise toggles. (POW-069)
+Warning: Fall toggles on pin u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/unpack_buf_reg[23]/QN are impossible given input states; converted to rise toggles. (POW-069)
+Warning: Fall toggles on pin u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/booth_mult.a_reg_reg[27]/QN are impossible given input states; converted to rise toggles. (POW-069)
+Warning: Fall toggles on pin u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC/booth_mult.a_reg_reg[26]/QN are impossible given input states; converted to rise toggles. (POW-069)
+Note - message 'POW-069' limit (10) exceeded. Remainder will be suppressed.
+
+  Cell Internal Power    = 1.18e+09 pW ( 98.4%)
+  Net Switching Power    = 1.86e+07 pW (  1.6%)
+Total Dynamic Power      = 1.20e+09 pW (100.0%)
+
+Cell Leakage Power       = 7.42e+03 pW
+
+
+  Attributes
+  ----------
+      u  -  User defined power group
+      i  -  Includes clock pin internal power
+
+Power Group         Internal Power        Switching Power          Leakage Power            Total Power    (   %  )    Attrs
+-----------------------------------------------------------------------------------------------------------------------------
+io_pad                    0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+memory                    0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+black_box                 0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+clock_network             1.13e+09               2.24e+06               1.75e+02               1.13e+09    ( 94.6%)        i
+register                  4.46e+07               4.88e+05               5.93e+03               4.51e+07    (  3.8%)         
+sequential                0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+combinational             3.84e+06               1.58e+07               1.32e+03               1.97e+07    (  1.6%)         
+-----------------------------------------------------------------------------------------------------------------------------
+Total                     1.18e+09 pW            1.86e+07 pW            7.42e+03 pW            1.20e+09 pW
+1
