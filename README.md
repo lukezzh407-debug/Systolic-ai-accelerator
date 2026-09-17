@@ -1,4 +1,4 @@
-# Group 4 — Systolic Array AI Accelerator
+# Systolic Array AI Accelerator IP design
 
 Public appendix materials for the Group 4 business / project plan.
 
@@ -21,12 +21,6 @@ Public appendix materials for the Group 4 business / project plan.
 - **Power (estimated activity):** Dynamic ≈ **1.20 mW**, Leakage ≈ **7.4 nW**  
 
 > Proprietary PDK / NDM libraries and full gate-level netlists are **not** included in this public repository.
-
-## Team (Group 4)
-
-- Architecture / RTL / Project lead: 周蜜  
-- Memory & bus (APB / Buffer / Tiling): 张子涵  
-- Verification & backend (Fusion Compiler): jointly completed by the team  
 
 ## License note
 
