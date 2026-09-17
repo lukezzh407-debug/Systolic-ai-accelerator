@@ -6,7 +6,8 @@ Public appendix materials for the Group 4 business / project plan.
 
 | Path | Description |
 |------|-------------|
-| `rtl/` | Frontend RTL used in Fusion Compiler synthesis (`ARRAY_SIZE=4` configuration) |
+| `rtl/` | Baseline frontend RTL used in Fusion Compiler synthesis (`ARRAY_SIZE=4`). Keep this tree for existing sim / synth file lists. |
+| `rtl_bank_internal_slice/` | Same RTL tree, but each 256-deep SRAM bank is sliced into 4×64 (`BUFFER_WRAPPER_SR.sv`). Does **not** replace `rtl/`. |
 | `reports/` | Synopsys Fusion Compiler reports (timing / area / power / QoR), X-FAB **xh018**, clock **100 ns** |
 | `docs/Group4_Poster.pdf` | Project technical poster |
 | `synth_fc.tcl` | Synthesis flow script (library paths redacted; run against local PDK) |
