@@ -1,0 +1,407 @@
+Timing Update Started(Full_timing_update) : updateCount: 1 / Mem-peak : 2220 MB / Date: Fri Sep 18 13:08:34 2026
+
+Timing Update Completed: Mem-peak: 2220 MB / Date: Fri Sep 18 13:08:35 2026
+
+Information: Corner max.SSG.1P62V-0P00V-0P00V-0P00V.M40C_FuncCmaxDP: no PVT mismatches. (PVT-032)
+Information: The stitching and editing of coupling caps is turned OFF for design 'subsystem:subsystem.design'. (TIM-125)
+Information: Design Average RC for design subsystem  (NEX-011)
+Information: r = 0.219770 ohm/um, via_r = 3.999095 ohm/cut, c = 0.151466 ff/um, cc = 0.000000 ff/um (X dir) (NEX-017)
+Information: r = 0.238095 ohm/um, via_r = 4.168349 ohm/cut, c = 0.166394 ff/um, cc = 0.000000 ff/um (Y dir) (NEX-017)
+Information: The RC mode used is VR for design 'subsystem'. (NEX-022)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 127292, routed nets = 0, across physical hierarchy nets = 0, parasitics cached nets = 127258, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
+************************************************************
+Timer Settings:
+Delay Calculation Style:                   auto
+Signal Integrity Analysis:                 disabled
+Timing Window Analysis:                    disabled
+Advanced Waveform Propagation:             disabled
+Variation Type:                            fixed_derate
+Clock Reconvergence Pessimism Removal:     disabled
+Advanced Receiver Model:                   disabled
+LLE:                                       disabled
+ML Acceleration:                           off
+Smart Arc Optimization:                    disabled
+************************************************************
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 10
+        -report_by design
+        -nosplit
+Design : subsystem
+Version: X-2025.06-SP3
+Date   : Fri Sep 18 13:08:38 2026
+****************************************
+
+  Startpoint: PWDATA[3] (input port clocked by virtual_from_clk_in.top_r)
+  Endpoint: u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/sram_inst_block[0].u_act_sram/ram_reg[255][24] (rising edge-triggered flip-flop clocked by clk_in)
+  Mode: FuncModeB0
+  Corner: max.SSG.1P62V-0P00V-0P00V-0P00V.M40C_FuncCmaxDP
+  Scenario: FuncModeB0::max.SSG.1P62V-0P00V-0P00V-0P00V.M40C_FuncCmaxDP
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                                                                              Incr         Path  
+  ------------------------------------------------------------------------------------------------------------------------------
+  clock virtual_from_clk_in.top_r (rise edge)                                                       0.0000       0.0000
+  clock network delay (ideal)                                                                       0.0000       1.9387
+  input external delay                                                                              8.9270      10.8657 r
+  PWDATA[3] (in)                                                                                    1.9387      10.8657 r
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/ctmi_12489/Q (MU2IHDX1)                           1.6009      12.4666 f
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/ctmi_12492/Q (NA2I1HDX1)                          0.9035      13.3701 r
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/ctmi_12491/Q (ON221HDX1)                          0.9763      14.3464 f
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/ctmi_12497/Q (OR2HDX1)                            0.8626      15.2090 f
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/ctmi_12496/Q (ON21HDX1)                           0.7075      15.9164 r
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/phfnr_buf_14274/Q (INHDX2)                        0.6734      16.5898 f
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/A13265/Q (ON21HDX4)                             1502.3176    1518.9073 r
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/sram_inst_block[0].u_act_sram/ram_reg[255][24]/D (SDFRQSSHDX1)    0.0000     1518.9073 r
+  data arrival time                                                                                            1518.9073
+
+  clock clk_in (rise edge)                                                                        100.0000     100.0000
+  clock network delay (ideal)                                                                       0.0000     100.0000
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/sram_inst_block[0].u_act_sram/ram_reg[255][24]/C (SDFRQSSHDX1)    0.0000     100.0000 r
+  library setup time                                                                              -64.9825      35.0175
+  data required time                                                                                            35.0176
+  ------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                            35.0176
+  data arrival time                                                                                            -1518.9073
+  ------------------------------------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                                             -1483.8898
+
+
+
+  Startpoint: PWDATA[3] (input port clocked by virtual_from_clk_in.top_r)
+  Endpoint: u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/sram_inst_block[0].u_act_sram/ram_reg[255][25] (rising edge-triggered flip-flop clocked by clk_in)
+  Mode: FuncModeB0
+  Corner: max.SSG.1P62V-0P00V-0P00V-0P00V.M40C_FuncCmaxDP
+  Scenario: FuncModeB0::max.SSG.1P62V-0P00V-0P00V-0P00V.M40C_FuncCmaxDP
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                                                                              Incr         Path  
+  ------------------------------------------------------------------------------------------------------------------------------
+  clock virtual_from_clk_in.top_r (rise edge)                                                       0.0000       0.0000
+  clock network delay (ideal)                                                                       0.0000       1.9387
+  input external delay                                                                              8.9270      10.8657 r
+  PWDATA[3] (in)                                                                                    1.9387      10.8657 r
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/ctmi_12489/Q (MU2IHDX1)                           1.6009      12.4666 f
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/ctmi_12492/Q (NA2I1HDX1)                          0.9035      13.3701 r
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/ctmi_12491/Q (ON221HDX1)                          0.9763      14.3464 f
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/ctmi_12497/Q (OR2HDX1)                            0.8626      15.2090 f
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/ctmi_12496/Q (ON21HDX1)                           0.7075      15.9164 r
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/phfnr_buf_14274/Q (INHDX2)                        0.6734      16.5898 f
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/A13264/Q (ON21HDX4)                             1502.3175    1518.9073 r
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/sram_inst_block[0].u_act_sram/ram_reg[255][25]/D (SDFRQSSHDX1)    0.0000     1518.9073 r
+  data arrival time                                                                                            1518.9073
+
+  clock clk_in (rise edge)                                                                        100.0000     100.0000
+  clock network delay (ideal)                                                                       0.0000     100.0000
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/sram_inst_block[0].u_act_sram/ram_reg[255][25]/C (SDFRQSSHDX1)    0.0000     100.0000 r
+  library setup time                                                                              -64.9825      35.0175
+  data required time                                                                                            35.0176
+  ------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                            35.0176
+  data arrival time                                                                                            -1518.9073
+  ------------------------------------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                                             -1483.8898
+
+
+
+  Startpoint: PWDATA[3] (input port clocked by virtual_from_clk_in.top_r)
+  Endpoint: u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/sram_inst_block[0].u_act_sram/ram_reg[255][27] (rising edge-triggered flip-flop clocked by clk_in)
+  Mode: FuncModeB0
+  Corner: max.SSG.1P62V-0P00V-0P00V-0P00V.M40C_FuncCmaxDP
+  Scenario: FuncModeB0::max.SSG.1P62V-0P00V-0P00V-0P00V.M40C_FuncCmaxDP
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                                                                              Incr         Path  
+  ------------------------------------------------------------------------------------------------------------------------------
+  clock virtual_from_clk_in.top_r (rise edge)                                                       0.0000       0.0000
+  clock network delay (ideal)                                                                       0.0000       1.9387
+  input external delay                                                                              8.9270      10.8657 r
+  PWDATA[3] (in)                                                                                    1.9387      10.8657 r
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/ctmi_12489/Q (MU2IHDX1)                           1.6009      12.4666 f
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/ctmi_12492/Q (NA2I1HDX1)                          0.9035      13.3701 r
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/ctmi_12491/Q (ON221HDX1)                          0.9763      14.3464 f
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/ctmi_12497/Q (OR2HDX1)                            0.8626      15.2090 f
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/ctmi_12496/Q (ON21HDX1)                           0.7075      15.9164 r
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/phfnr_buf_14274/Q (INHDX2)                        0.6734      16.5898 f
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/A13277/Q (ON21HDX4)                             1502.3175    1518.9073 r
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/sram_inst_block[0].u_act_sram/ram_reg[255][27]/D (SDFRQSSHDX1)    0.0000     1518.9073 r
+  data arrival time                                                                                            1518.9073
+
+  clock clk_in (rise edge)                                                                        100.0000     100.0000
+  clock network delay (ideal)                                                                       0.0000     100.0000
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/sram_inst_block[0].u_act_sram/ram_reg[255][27]/C (SDFRQSSHDX1)    0.0000     100.0000 r
+  library setup time                                                                              -64.9825      35.0175
+  data required time                                                                                            35.0176
+  ------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                            35.0176
+  data arrival time                                                                                            -1518.9073
+  ------------------------------------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                                             -1483.8898
+
+
+
+  Startpoint: PWDATA[3] (input port clocked by virtual_from_clk_in.top_r)
+  Endpoint: u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/sram_inst_block[0].u_act_sram/ram_reg[254][24] (rising edge-triggered flip-flop clocked by clk_in)
+  Mode: FuncModeB0
+  Corner: max.SSG.1P62V-0P00V-0P00V-0P00V.M40C_FuncCmaxDP
+  Scenario: FuncModeB0::max.SSG.1P62V-0P00V-0P00V-0P00V.M40C_FuncCmaxDP
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                                                                              Incr         Path  
+  ------------------------------------------------------------------------------------------------------------------------------
+  clock virtual_from_clk_in.top_r (rise edge)                                                       0.0000       0.0000
+  clock network delay (ideal)                                                                       0.0000       1.9387
+  input external delay                                                                              8.9270      10.8657 r
+  PWDATA[3] (in)                                                                                    1.9387      10.8657 r
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/ctmi_12489/Q (MU2IHDX1)                           1.6009      12.4666 f
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/ctmi_12492/Q (NA2I1HDX1)                          0.9035      13.3701 r
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/ctmi_12491/Q (ON221HDX1)                          0.9763      14.3464 f
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/ctmi_12497/Q (OR2HDX1)                            0.8626      15.2090 f
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/ctmi_12496/Q (ON21HDX1)                           0.7075      15.9164 r
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/phfnr_buf_14274/Q (INHDX2)                        0.6734      16.5898 f
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/A13265/Q (ON21HDX4)                             1502.3176    1518.9073 r
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/sram_inst_block[0].u_act_sram/ram_reg[254][24]/D (SDFRQSSHDX1)    0.0000     1518.9073 r
+  data arrival time                                                                                            1518.9073
+
+  clock clk_in (rise edge)                                                                        100.0000     100.0000
+  clock network delay (ideal)                                                                       0.0000     100.0000
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/sram_inst_block[0].u_act_sram/ram_reg[254][24]/C (SDFRQSSHDX1)    0.0000     100.0000 r
+  library setup time                                                                              -64.9825      35.0175
+  data required time                                                                                            35.0176
+  ------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                            35.0176
+  data arrival time                                                                                            -1518.9073
+  ------------------------------------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                                             -1483.8898
+
+
+
+  Startpoint: PWDATA[3] (input port clocked by virtual_from_clk_in.top_r)
+  Endpoint: u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/sram_inst_block[0].u_act_sram/ram_reg[254][25] (rising edge-triggered flip-flop clocked by clk_in)
+  Mode: FuncModeB0
+  Corner: max.SSG.1P62V-0P00V-0P00V-0P00V.M40C_FuncCmaxDP
+  Scenario: FuncModeB0::max.SSG.1P62V-0P00V-0P00V-0P00V.M40C_FuncCmaxDP
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                                                                              Incr         Path  
+  ------------------------------------------------------------------------------------------------------------------------------
+  clock virtual_from_clk_in.top_r (rise edge)                                                       0.0000       0.0000
+  clock network delay (ideal)                                                                       0.0000       1.9387
+  input external delay                                                                              8.9270      10.8657 r
+  PWDATA[3] (in)                                                                                    1.9387      10.8657 r
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/ctmi_12489/Q (MU2IHDX1)                           1.6009      12.4666 f
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/ctmi_12492/Q (NA2I1HDX1)                          0.9035      13.3701 r
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/ctmi_12491/Q (ON221HDX1)                          0.9763      14.3464 f
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/ctmi_12497/Q (OR2HDX1)                            0.8626      15.2090 f
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/ctmi_12496/Q (ON21HDX1)                           0.7075      15.9164 r
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/phfnr_buf_14274/Q (INHDX2)                        0.6734      16.5898 f
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/A13264/Q (ON21HDX4)                             1502.3175    1518.9073 r
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/sram_inst_block[0].u_act_sram/ram_reg[254][25]/D (SDFRQSSHDX1)    0.0000     1518.9073 r
+  data arrival time                                                                                            1518.9073
+
+  clock clk_in (rise edge)                                                                        100.0000     100.0000
+  clock network delay (ideal)                                                                       0.0000     100.0000
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/sram_inst_block[0].u_act_sram/ram_reg[254][25]/C (SDFRQSSHDX1)    0.0000     100.0000 r
+  library setup time                                                                              -64.9825      35.0175
+  data required time                                                                                            35.0176
+  ------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                            35.0176
+  data arrival time                                                                                            -1518.9073
+  ------------------------------------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                                             -1483.8898
+
+
+
+  Startpoint: PWDATA[3] (input port clocked by virtual_from_clk_in.top_r)
+  Endpoint: u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/sram_inst_block[0].u_act_sram/ram_reg[254][27] (rising edge-triggered flip-flop clocked by clk_in)
+  Mode: FuncModeB0
+  Corner: max.SSG.1P62V-0P00V-0P00V-0P00V.M40C_FuncCmaxDP
+  Scenario: FuncModeB0::max.SSG.1P62V-0P00V-0P00V-0P00V.M40C_FuncCmaxDP
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                                                                              Incr         Path  
+  ------------------------------------------------------------------------------------------------------------------------------
+  clock virtual_from_clk_in.top_r (rise edge)                                                       0.0000       0.0000
+  clock network delay (ideal)                                                                       0.0000       1.9387
+  input external delay                                                                              8.9270      10.8657 r
+  PWDATA[3] (in)                                                                                    1.9387      10.8657 r
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/ctmi_12489/Q (MU2IHDX1)                           1.6009      12.4666 f
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/ctmi_12492/Q (NA2I1HDX1)                          0.9035      13.3701 r
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/ctmi_12491/Q (ON221HDX1)                          0.9763      14.3464 f
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/ctmi_12497/Q (OR2HDX1)                            0.8626      15.2090 f
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/ctmi_12496/Q (ON21HDX1)                           0.7075      15.9164 r
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/phfnr_buf_14274/Q (INHDX2)                        0.6734      16.5898 f
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/A13277/Q (ON21HDX4)                             1502.3175    1518.9073 r
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/sram_inst_block[0].u_act_sram/ram_reg[254][27]/D (SDFRQSSHDX1)    0.0000     1518.9073 r
+  data arrival time                                                                                            1518.9073
+
+  clock clk_in (rise edge)                                                                        100.0000     100.0000
+  clock network delay (ideal)                                                                       0.0000     100.0000
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/sram_inst_block[0].u_act_sram/ram_reg[254][27]/C (SDFRQSSHDX1)    0.0000     100.0000 r
+  library setup time                                                                              -64.9825      35.0175
+  data required time                                                                                            35.0176
+  ------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                            35.0176
+  data arrival time                                                                                            -1518.9073
+  ------------------------------------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                                             -1483.8898
+
+
+
+  Startpoint: PWDATA[3] (input port clocked by virtual_from_clk_in.top_r)
+  Endpoint: u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/sram_inst_block[0].u_act_sram/ram_reg[253][24] (rising edge-triggered flip-flop clocked by clk_in)
+  Mode: FuncModeB0
+  Corner: max.SSG.1P62V-0P00V-0P00V-0P00V.M40C_FuncCmaxDP
+  Scenario: FuncModeB0::max.SSG.1P62V-0P00V-0P00V-0P00V.M40C_FuncCmaxDP
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                                                                              Incr         Path  
+  ------------------------------------------------------------------------------------------------------------------------------
+  clock virtual_from_clk_in.top_r (rise edge)                                                       0.0000       0.0000
+  clock network delay (ideal)                                                                       0.0000       1.9387
+  input external delay                                                                              8.9270      10.8657 r
+  PWDATA[3] (in)                                                                                    1.9387      10.8657 r
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/ctmi_12489/Q (MU2IHDX1)                           1.6009      12.4666 f
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/ctmi_12492/Q (NA2I1HDX1)                          0.9035      13.3701 r
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/ctmi_12491/Q (ON221HDX1)                          0.9763      14.3464 f
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/ctmi_12497/Q (OR2HDX1)                            0.8626      15.2090 f
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/ctmi_12496/Q (ON21HDX1)                           0.7075      15.9164 r
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/phfnr_buf_14274/Q (INHDX2)                        0.6734      16.5898 f
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/A13265/Q (ON21HDX4)                             1502.3176    1518.9073 r
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/sram_inst_block[0].u_act_sram/ram_reg[253][24]/D (SDFRQSSHDX1)    0.0000     1518.9073 r
+  data arrival time                                                                                            1518.9073
+
+  clock clk_in (rise edge)                                                                        100.0000     100.0000
+  clock network delay (ideal)                                                                       0.0000     100.0000
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/sram_inst_block[0].u_act_sram/ram_reg[253][24]/C (SDFRQSSHDX1)    0.0000     100.0000 r
+  library setup time                                                                              -64.9825      35.0175
+  data required time                                                                                            35.0176
+  ------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                            35.0176
+  data arrival time                                                                                            -1518.9073
+  ------------------------------------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                                             -1483.8898
+
+
+
+  Startpoint: PWDATA[3] (input port clocked by virtual_from_clk_in.top_r)
+  Endpoint: u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/sram_inst_block[0].u_act_sram/ram_reg[253][25] (rising edge-triggered flip-flop clocked by clk_in)
+  Mode: FuncModeB0
+  Corner: max.SSG.1P62V-0P00V-0P00V-0P00V.M40C_FuncCmaxDP
+  Scenario: FuncModeB0::max.SSG.1P62V-0P00V-0P00V-0P00V.M40C_FuncCmaxDP
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                                                                              Incr         Path  
+  ------------------------------------------------------------------------------------------------------------------------------
+  clock virtual_from_clk_in.top_r (rise edge)                                                       0.0000       0.0000
+  clock network delay (ideal)                                                                       0.0000       1.9387
+  input external delay                                                                              8.9270      10.8657 r
+  PWDATA[3] (in)                                                                                    1.9387      10.8657 r
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/ctmi_12489/Q (MU2IHDX1)                           1.6009      12.4666 f
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/ctmi_12492/Q (NA2I1HDX1)                          0.9035      13.3701 r
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/ctmi_12491/Q (ON221HDX1)                          0.9763      14.3464 f
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/ctmi_12497/Q (OR2HDX1)                            0.8626      15.2090 f
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/ctmi_12496/Q (ON21HDX1)                           0.7075      15.9164 r
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/phfnr_buf_14274/Q (INHDX2)                        0.6734      16.5898 f
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/A13264/Q (ON21HDX4)                             1502.3175    1518.9073 r
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/sram_inst_block[0].u_act_sram/ram_reg[253][25]/D (SDFRQSSHDX1)    0.0000     1518.9073 r
+  data arrival time                                                                                            1518.9073
+
+  clock clk_in (rise edge)                                                                        100.0000     100.0000
+  clock network delay (ideal)                                                                       0.0000     100.0000
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/sram_inst_block[0].u_act_sram/ram_reg[253][25]/C (SDFRQSSHDX1)    0.0000     100.0000 r
+  library setup time                                                                              -64.9825      35.0175
+  data required time                                                                                            35.0176
+  ------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                            35.0176
+  data arrival time                                                                                            -1518.9073
+  ------------------------------------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                                             -1483.8898
+
+
+
+  Startpoint: PWDATA[3] (input port clocked by virtual_from_clk_in.top_r)
+  Endpoint: u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/sram_inst_block[0].u_act_sram/ram_reg[253][27] (rising edge-triggered flip-flop clocked by clk_in)
+  Mode: FuncModeB0
+  Corner: max.SSG.1P62V-0P00V-0P00V-0P00V.M40C_FuncCmaxDP
+  Scenario: FuncModeB0::max.SSG.1P62V-0P00V-0P00V-0P00V.M40C_FuncCmaxDP
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                                                                              Incr         Path  
+  ------------------------------------------------------------------------------------------------------------------------------
+  clock virtual_from_clk_in.top_r (rise edge)                                                       0.0000       0.0000
+  clock network delay (ideal)                                                                       0.0000       1.9387
+  input external delay                                                                              8.9270      10.8657 r
+  PWDATA[3] (in)                                                                                    1.9387      10.8657 r
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/ctmi_12489/Q (MU2IHDX1)                           1.6009      12.4666 f
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/ctmi_12492/Q (NA2I1HDX1)                          0.9035      13.3701 r
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/ctmi_12491/Q (ON221HDX1)                          0.9763      14.3464 f
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/ctmi_12497/Q (OR2HDX1)                            0.8626      15.2090 f
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/ctmi_12496/Q (ON21HDX1)                           0.7075      15.9164 r
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/phfnr_buf_14274/Q (INHDX2)                        0.6734      16.5898 f
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/A13277/Q (ON21HDX4)                             1502.3175    1518.9073 r
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/sram_inst_block[0].u_act_sram/ram_reg[253][27]/D (SDFRQSSHDX1)    0.0000     1518.9073 r
+  data arrival time                                                                                            1518.9073
+
+  clock clk_in (rise edge)                                                                        100.0000     100.0000
+  clock network delay (ideal)                                                                       0.0000     100.0000
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/sram_inst_block[0].u_act_sram/ram_reg[253][27]/C (SDFRQSSHDX1)    0.0000     100.0000 r
+  library setup time                                                                              -64.9825      35.0175
+  data required time                                                                                            35.0176
+  ------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                            35.0176
+  data arrival time                                                                                            -1518.9073
+  ------------------------------------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                                             -1483.8898
+
+
+
+  Startpoint: PWDATA[3] (input port clocked by virtual_from_clk_in.top_r)
+  Endpoint: u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/sram_inst_block[0].u_act_sram/ram_reg[252][24] (rising edge-triggered flip-flop clocked by clk_in)
+  Mode: FuncModeB0
+  Corner: max.SSG.1P62V-0P00V-0P00V-0P00V.M40C_FuncCmaxDP
+  Scenario: FuncModeB0::max.SSG.1P62V-0P00V-0P00V-0P00V.M40C_FuncCmaxDP
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                                                                              Incr         Path  
+  ------------------------------------------------------------------------------------------------------------------------------
+  clock virtual_from_clk_in.top_r (rise edge)                                                       0.0000       0.0000
+  clock network delay (ideal)                                                                       0.0000       1.9387
+  input external delay                                                                              8.9270      10.8657 r
+  PWDATA[3] (in)                                                                                    1.9387      10.8657 r
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/ctmi_12489/Q (MU2IHDX1)                           1.6009      12.4666 f
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/ctmi_12492/Q (NA2I1HDX1)                          0.9035      13.3701 r
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/ctmi_12491/Q (ON221HDX1)                          0.9763      14.3464 f
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/ctmi_12497/Q (OR2HDX1)                            0.8626      15.2090 f
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/ctmi_12496/Q (ON21HDX1)                           0.7075      15.9164 r
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/phfnr_buf_14274/Q (INHDX2)                        0.6734      16.5898 f
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker/A13265/Q (ON21HDX4)                             1502.3176    1518.9073 r
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/sram_inst_block[0].u_act_sram/ram_reg[252][24]/D (SDFRQSSHDX1)    0.0000     1518.9073 r
+  data arrival time                                                                                            1518.9073
+
+  clock clk_in (rise edge)                                                                        100.0000     100.0000
+  clock network delay (ideal)                                                                       0.0000     100.0000
+  u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/sram_inst_block[0].u_act_sram/ram_reg[252][24]/C (SDFRQSSHDX1)    0.0000     100.0000 r
+  library setup time                                                                              -64.9825      35.0175
+  data required time                                                                                            35.0176
+  ------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                            35.0176
+  data arrival time                                                                                            -1518.9073
+  ------------------------------------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                                             -1483.8898
+
+
+1

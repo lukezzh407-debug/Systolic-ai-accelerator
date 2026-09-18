@@ -1,7 +1,7 @@
 # 01 — Frontend RTL
 
-Readable copy of the accelerator used in Fusion Compiler (`ARRAY_SIZE=4`, `MATRIX_SIZE=32`).
+Baseline accelerator RTL used as the readable source tree (`ARRAY_SIZE=4`, `MATRIX_SIZE=32`).
 
-Write path in `wrappers_sram/BUFFER_WRAPPER_SR.sv` uses **per-bank** data/address/enable registers (one extra cycle vs. combinational unpacker → RAM).
+SRAM is inferred flop RAM (no foundry SRAM macros). In `wrappers_sram/BUFFER_WRAPPER_SR.sv`, APB unpacker output `current_unpack_data` connects **combinationally** to every bank’s `wr_data`. That is the version that produces the large Fusion Compiler timing violations; see [`05_asic_synth/README.md`](../05_asic_synth/README.md).
 
-The intra-bank 4×64 slice experiment lives only under [`05_asic_synth/rtl_bank_internal_slice/`](../05_asic_synth/rtl_bank_internal_slice/). Keep this tree for existing sim / SoC file lists.
+Write-path experiments (register cloning / intra-bank slices) stay under `05_asic_synth/` and are **not** this tree.

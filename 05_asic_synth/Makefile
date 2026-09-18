@@ -1,9 +1,10 @@
 # Fusion Compiler entry points. PDK is local-only (see pdk/README.md).
 #
-#   make asic-all                              # intra-bank slice RTL
-#   make asic-all VARIANT=bank_registered      # per-bank write-register RTL
+#   make asic-all                                 # baseline, no write cloning
+#   make asic-all VARIANT=bank_registered
+#   make asic-all VARIANT=bank_internal_slice
 
-VARIANT ?= bank_internal_slice
+VARIANT ?= baseline
 RTL_DIR ?= ../rtl_$(VARIANT)
 RPT_DIR ?= ../reports_$(VARIANT)
 

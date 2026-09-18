@@ -11,28 +11,27 @@ APB-attached 4×4 systolic-array accelerator for 32×32 integer GEMM (`ARRAY_SIZ
 | Tool | Synopsys Fusion Compiler X-2025.06-SP3 |
 | Process | X-FAB xh018 HD stdcells |
 | Clock | 100 ns (10 MHz), SSG @ 1.62 V / −40 °C |
-| Path timing | WNS ≈ **+63.7 ns**, TNS = 0, **0** violating paths |
-| Cell area | ≈ **5.41 mm²** (inferred flop SRAM dominates) |
-| Power (tool estimate) | Dynamic ≈ 1.20 mW, leakage ≈ 7.4 nW |
+| SRAM | Inferred flop RAM (no foundry SRAM macros) |
 
-Two SRAM write-path experiments (same clock, same floorplan budget):
+**Baseline RTL** ([`01_rtl/`](01_rtl/)): unpacker output drives every inferred RAM D pin in the same cycle. STA sees ~1500 ns slew on `current_unpack_data` → `ram_reg[*]/D`, so **65536** paths miss the 100 ns clock (WNS ≈ **−1484 ns**). That is load on a combo net, not extra ALU logic. Reports: [`05_asic_synth/reports_baseline/`](05_asic_synth/reports_baseline/).
 
-| RTL | Max-cap **nets** | Max-cap **severity** | Notes |
-|-----|------------------|----------------------|--------|
-| Per-bank write registers | 1412 | 1093 | [`05_asic_synth/reports_bank_registered/`](05_asic_synth/reports_bank_registered/) |
-| Intra-bank 4×64 slices | 3583 | 728 | Count ↑ (one fat net → four still-illegal nets); worst net ↓. [`reports_bank_internal_slice/`](05_asic_synth/reports_bank_internal_slice/) |
+With per-bank (then per-slice) write registers, **path timing closes**; `logic_opto` still inserts **0 buffers**, so max-cap nets remain. Utilization ≫ 0.75 until macros or a larger floorplan.
 
-`logic_opto` inserts **0 buffers**. Utilization ≫ 0.75 until SRAM macros or a larger floorplan.
+| RTL | Violating paths | WNS | Max-cap nets | Notes |
+|-----|-----------------|-----|--------------|--------|
+| Baseline (no cloning) | 65536 | −1484 ns | 1176 | [`reports_baseline/`](05_asic_synth/reports_baseline/) |
+| Per-bank write registers | 0 | +63.7 ns | 1412 | [`reports_bank_registered/`](05_asic_synth/reports_bank_registered/) |
+| Intra-bank 4×64 slices | 0 | +63.5 ns | 3583 | Count ↑, worst net ↓. [`reports_bank_internal_slice/`](05_asic_synth/reports_bank_internal_slice/) |
 
 ## Repository layout
 
 | Path | Status | Contents |
 |------|--------|----------|
-| [`01_rtl/`](01_rtl/) | Done | Frontend RTL (per-bank write registers) |
+| [`01_rtl/`](01_rtl/) | Done | Baseline frontend RTL (no write-path cloning) |
 | [`02_block_sim/`](02_block_sim/) | Later | Module testbenches |
 | [`03_soc_edu4chip/`](03_soc_edu4chip/) | Later | APB SoC integration, C/C++ host |
 | [`04_fpga/`](04_fpga/) | Later | Board bring-up (no vendor bitstream) |
-| [`05_asic_synth/`](05_asic_synth/) | In progress | FC scripts, constraints, two RTL variants, QoR reports |
+| [`05_asic_synth/`](05_asic_synth/) | In progress | FC scripts, constraints, three RTL variants, QoR reports |
 | [`06_gls/`](06_gls/) | Later | Gate-level sim notes (no netlist in git) |
 | [`07_pnr_layout/`](07_pnr_layout/) | Later | PnR / layout screenshots (no GDS) |
 | [`docs/`](docs/) | Done | Technical poster |

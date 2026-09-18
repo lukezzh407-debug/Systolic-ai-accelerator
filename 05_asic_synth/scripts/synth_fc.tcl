@@ -2,18 +2,18 @@
 # PDK, NDM, work library, and netlists are not in this repository.
 #
 # Optional Tcl variables (set from Makefile before this file is sourced):
-#   rtl_path   default ../rtl_bank_internal_slice
-#   rpt_dir    default ../reports_bank_internal_slice
+#   rtl_path   default ../rtl_baseline
+#   rpt_dir    default ../reports_baseline
 
 set top_module subsystem
 set clk_input clk
 set output_name "${top_module}_100ns"
 
 if {![info exists rtl_path]} {
-    set rtl_path "../rtl_bank_internal_slice"
+    set rtl_path "../rtl_baseline"
 }
 if {![info exists rpt_dir]} {
-    set rpt_dir "../reports_bank_internal_slice"
+    set rpt_dir "../reports_baseline"
 }
 
 set work_dir [pwd]
