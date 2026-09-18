@@ -1,9 +1,20 @@
-# Local / proprietary — never publish
-xh018/
-work/
-*.ndm
-*.svf
-*.v.gz
-*.log
+# Foundry PDK / compiled stdcell views — never publish
+**/*.ndm
+**/*.nlib
+**/xh018_HD.ndm/
+05_asic_synth/pdk/stdlibs/*.ndm
+05_asic_synth/pdk/stdlibs/*.ems
+05_asic_synth/pdk/stdlibs/lm_output.txt
+
+# Fusion Compiler working library and logs
+**/work/
+**/*.log
+**/*.svf
+
+# Gate-level netlists (mapped to proprietary stdcells)
+**/*.v.gz
+**/*netlist*.v
+
+# OS
 .DS_Store
 Thumbs.db

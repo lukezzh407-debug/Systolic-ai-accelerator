@@ -1,0 +1,93 @@
+****************************************
+Report : area
+Design : subsystem
+Version: X-2025.06-SP3
+Date   : Fri Sep 18 12:23:02 2026
+****************************************
+
+Number of ports:                         8430
+Number of nets:                        140672
+Number of cells:                       131629
+Number of combinational cells:          57437
+Number of sequential cells:             74192
+Number of macros/black boxes:               0
+Number of buf/inv:                       2466
+Number of references:                     108
+
+Combinational area:                 936627.87
+Buf/Inv area:                        29214.98
+Noncombinational area:             4639679.39
+Macro/Black Box area:                    0.00
+
+Total cell area:                   5576307.25
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area                  Local cell area
+                                  -------------------------------------------------------------
+Hierarchical cell                 Absolute      Percent  Combi-       Noncombi-    Black-
+                                  Total         Total    national     national     boxes         Design
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+subsystem                           5576307.25    100.0         0.00         0.00          0.00  subsystem
+u_AI_ACC_TOP                        5576307.25    100.0         0.00         0.00          0.00  AI_ACC_TOP_APB_AW16_APB_DW32_MATRIX_SIZE32_ARRAY_SIZE4_MATRIX_DW32_SUM_DW32_MAC_LATENCY16_RAM_READ_DELAY1_MULT_MODE0
+u_AI_ACC_TOP/u_APB_SRAM_WRAPPER      5222925.21     93.7     31254.63    162156.29         0.00  BUFFER_WRAPPER_SR_SRAM_DEPTH32_ARRAY_SIZE4_MATRIX_DW32_SUM_DW32_APB_AW16_APB_DW32
+u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/sram_inst_block[0].act_slice[0].u_act_sram       156990.67      2.8     23520.00    133470.67         0.00 simple_dualport_ram_ADDR_WIDTH6_DATA_WIDTH32_DATA_DEPTH64_0
+u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/sram_inst_block[0].act_slice[1].u_act_sram       156998.20      2.8     23527.53    133470.67         0.00 simple_dualport_ram_ADDR_WIDTH6_DATA_WIDTH32_DATA_DEPTH64_1
+u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/sram_inst_block[0].act_slice[2].u_act_sram       156998.20      2.8     23527.53    133470.67         0.00 simple_dualport_ram_ADDR_WIDTH6_DATA_WIDTH32_DATA_DEPTH64_2
+u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/sram_inst_block[0].act_slice[3].u_act_sram       156998.20      2.8     23527.53    133470.67         0.00 simple_dualport_ram_ADDR_WIDTH6_DATA_WIDTH32_DATA_DEPTH64_3
+u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/sram_inst_block[0].wei_slice[0].u_wei_sram       157013.25      2.8     23542.58    133470.67         0.00 simple_dualport_ram_ADDR_WIDTH6_DATA_WIDTH32_DATA_DEPTH64_4
+u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/sram_inst_block[0].wei_slice[1].u_wei_sram       157000.70      2.8     23527.53    133473.18         0.00 simple_dualport_ram_ADDR_WIDTH6_DATA_WIDTH32_DATA_DEPTH64_5
+u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/sram_inst_block[0].wei_slice[2].u_wei_sram       157005.72      2.8     23535.05    133470.67         0.00 simple_dualport_ram_ADDR_WIDTH6_DATA_WIDTH32_DATA_DEPTH64_6
+u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/sram_inst_block[0].wei_slice[3].u_wei_sram       157025.79      2.8     23555.12    133470.67         0.00 simple_dualport_ram_ADDR_WIDTH6_DATA_WIDTH32_DATA_DEPTH64_7
+u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/sram_inst_block[1].act_slice[0].u_act_sram       156998.20      2.8     23527.53    133470.67         0.00 simple_dualport_ram_ADDR_WIDTH6_DATA_WIDTH32_DATA_DEPTH64_8
+u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/sram_inst_block[1].act_slice[1].u_act_sram       156990.67      2.8     23520.00    133470.67         0.00 simple_dualport_ram_ADDR_WIDTH6_DATA_WIDTH32_DATA_DEPTH64_9
+u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/sram_inst_block[1].act_slice[2].u_act_sram       156998.20      2.8     23527.53    133470.67         0.00 simple_dualport_ram_ADDR_WIDTH6_DATA_WIDTH32_DATA_DEPTH64_10
+u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/sram_inst_block[1].act_slice[3].u_act_sram       156998.20      2.8     23527.53    133470.67         0.00 simple_dualport_ram_ADDR_WIDTH6_DATA_WIDTH32_DATA_DEPTH64_11
+u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/sram_inst_block[1].wei_slice[0].u_wei_sram       156990.67      2.8     23520.00    133470.67         0.00 simple_dualport_ram_ADDR_WIDTH6_DATA_WIDTH32_DATA_DEPTH64_12
+u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/sram_inst_block[1].wei_slice[1].u_wei_sram       157013.25      2.8     23542.58    133470.67         0.00 simple_dualport_ram_ADDR_WIDTH6_DATA_WIDTH32_DATA_DEPTH64_13
+u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/sram_inst_block[1].wei_slice[2].u_wei_sram       156990.67      2.8     23520.00    133470.67         0.00 simple_dualport_ram_ADDR_WIDTH6_DATA_WIDTH32_DATA_DEPTH64_14
+u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/sram_inst_block[1].wei_slice[3].u_wei_sram       156990.67      2.8     23520.00    133470.67         0.00 simple_dualport_ram_ADDR_WIDTH6_DATA_WIDTH32_DATA_DEPTH64_15
+u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/sram_inst_block[2].act_slice[0].u_act_sram       156998.20      2.8     23527.53    133470.67         0.00 simple_dualport_ram_ADDR_WIDTH6_DATA_WIDTH32_DATA_DEPTH64_16
+u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/sram_inst_block[2].act_slice[1].u_act_sram       156998.20      2.8     23527.53    133470.67         0.00 simple_dualport_ram_ADDR_WIDTH6_DATA_WIDTH32_DATA_DEPTH64_17
+u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/sram_inst_block[2].act_slice[2].u_act_sram       157013.25      2.8     23542.58    133470.67         0.00 simple_dualport_ram_ADDR_WIDTH6_DATA_WIDTH32_DATA_DEPTH64_18
+u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/sram_inst_block[2].act_slice[3].u_act_sram       157005.72      2.8     23535.05    133470.67         0.00 simple_dualport_ram_ADDR_WIDTH6_DATA_WIDTH32_DATA_DEPTH64_19
+u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/sram_inst_block[2].wei_slice[0].u_wei_sram       157003.21      2.8     23532.54    133470.67         0.00 simple_dualport_ram_ADDR_WIDTH6_DATA_WIDTH32_DATA_DEPTH64_20
+u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/sram_inst_block[2].wei_slice[1].u_wei_sram       157013.25      2.8     23542.58    133470.67         0.00 simple_dualport_ram_ADDR_WIDTH6_DATA_WIDTH32_DATA_DEPTH64_21
+u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/sram_inst_block[2].wei_slice[2].u_wei_sram       156990.67      2.8     23520.00    133470.67         0.00 simple_dualport_ram_ADDR_WIDTH6_DATA_WIDTH32_DATA_DEPTH64_22
+u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/sram_inst_block[2].wei_slice[3].u_wei_sram       156998.20      2.8     23527.53    133470.67         0.00 simple_dualport_ram_ADDR_WIDTH6_DATA_WIDTH32_DATA_DEPTH64_23
+u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/sram_inst_block[3].act_slice[0].u_act_sram       157003.21      2.8     23532.54    133470.67         0.00 simple_dualport_ram_ADDR_WIDTH6_DATA_WIDTH32_DATA_DEPTH64_24
+u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/sram_inst_block[3].act_slice[1].u_act_sram       156990.67      2.8     23520.00    133470.67         0.00 simple_dualport_ram_ADDR_WIDTH6_DATA_WIDTH32_DATA_DEPTH64_25
+u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/sram_inst_block[3].act_slice[2].u_act_sram       157005.72      2.8     23535.05    133470.67         0.00 simple_dualport_ram_ADDR_WIDTH6_DATA_WIDTH32_DATA_DEPTH64_26
+u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/sram_inst_block[3].act_slice[3].u_act_sram       156990.67      2.8     23520.00    133470.67         0.00 simple_dualport_ram_ADDR_WIDTH6_DATA_WIDTH32_DATA_DEPTH64_27
+u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/sram_inst_block[3].wei_slice[0].u_wei_sram       156998.20      2.8     23527.53    133470.67         0.00 simple_dualport_ram_ADDR_WIDTH6_DATA_WIDTH32_DATA_DEPTH64_28
+u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/sram_inst_block[3].wei_slice[1].u_wei_sram       156998.20      2.8     23527.53    133470.67         0.00 simple_dualport_ram_ADDR_WIDTH6_DATA_WIDTH32_DATA_DEPTH64_29
+u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/sram_inst_block[3].wei_slice[2].u_wei_sram       157374.52      2.8     23903.85    133470.67         0.00 simple_dualport_ram_ADDR_WIDTH6_DATA_WIDTH32_DATA_DEPTH64_30
+u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/sram_inst_block[3].wei_slice[3].u_wei_sram       156998.20      2.8     23527.53    133470.67         0.00 simple_dualport_ram_ADDR_WIDTH6_DATA_WIDTH32_DATA_DEPTH64
+u_AI_ACC_TOP/u_APB_SRAM_WRAPPER/u_data_unpacker         5133.00      0.1      2769.72      2363.29         0.00 DATA_UNPACKER_APB_DW32
+u_AI_ACC_TOP/u_SA2APB_DATA_PROC         4538.42      0.1      1871.56      2666.85         0.00  SA2APB_DATA_PROC_ARRAY_SIZE4_MATRIX_DW32_SUM_DW32_APB_DW32
+u_AI_ACC_TOP/u_SYSTOLIC_ARRAY        346174.26      6.2         0.00         0.00          0.00  SYSTOLIC_ARRAY_ARRAY_SIZE4_MATRIX_DW32_SUM_DW32_MULT_MODE0
+u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW        88369.97      1.6         0.00         0.00         0.00 MAC_ROW_ARRAY_SIZE4_MATRIX_DW32_SUM_DW32_MULT_MODE0_0
+u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC        22624.36      0.4      9224.86     13399.50         0.00 MAC_MATRIX_DW32_SUM_DW32_MULT_MODE0_0
+u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC        22616.83      0.4      9217.33     13399.50         0.00 MAC_MATRIX_DW32_SUM_DW32_MULT_MODE0_1
+u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC        22621.85      0.4      9222.35     13399.50         0.00 MAC_MATRIX_DW32_SUM_DW32_MULT_MODE0_2
+u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[0].genblk1.u_MAC_ROW/mac_gen[3].genblk1.u_MAC        20506.93      0.4      8953.91     11553.02         0.00 MAC_MATRIX_DW32_SUM_DW32_MULT_MODE0_3
+u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW        88430.18      1.6         0.00         0.00         0.00 MAC_ROW_ARRAY_SIZE4_MATRIX_DW32_SUM_DW32_MULT_MODE0_1
+u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC        22626.87      0.4      9227.37     13399.50         0.00 MAC_MATRIX_DW32_SUM_DW32_MULT_MODE0_4
+u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC        22626.87      0.4      9219.84     13407.03         0.00 MAC_MATRIX_DW32_SUM_DW32_MULT_MODE0_5
+u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC        22636.90      0.4      9232.38     13404.52         0.00 MAC_MATRIX_DW32_SUM_DW32_MULT_MODE0_6
+u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[1].genblk1.u_MAC_ROW/mac_gen[3].genblk1.u_MAC        20539.55      0.4      8986.52     11553.02         0.00 MAC_MATRIX_DW32_SUM_DW32_MULT_MODE0_7
+u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW        88425.16      1.6         0.00         0.00         0.00 MAC_ROW_ARRAY_SIZE4_MATRIX_DW32_SUM_DW32_MULT_MODE0_2
+u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC        22641.92      0.4      9232.38     13409.54         0.00 MAC_MATRIX_DW32_SUM_DW32_MULT_MODE0_8
+u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC        22611.81      0.4      9212.31     13399.50         0.00 MAC_MATRIX_DW32_SUM_DW32_MULT_MODE0_9
+u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC        22631.88      0.4      9227.37     13404.52         0.00 MAC_MATRIX_DW32_SUM_DW32_MULT_MODE0_10
+u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[2].genblk1.u_MAC_ROW/mac_gen[3].genblk1.u_MAC        20539.55      0.4      8986.52     11553.02         0.00 MAC_MATRIX_DW32_SUM_DW32_MULT_MODE0_11
+u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW        80948.94      1.5         0.00         0.00         0.00 MAC_ROW_ARRAY_SIZE4_MATRIX_DW32_SUM_DW32_MULT_MODE0
+u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[0].genblk1.u_MAC        20777.88      0.4      9224.86     11553.02         0.00 MAC_MATRIX_DW32_SUM_DW32_MULT_MODE0_12
+u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[1].genblk1.u_MAC        20782.90      0.4      9229.88     11553.02         0.00 MAC_MATRIX_DW32_SUM_DW32_MULT_MODE0_13
+u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[2].genblk1.u_MAC        20772.86      0.4      9219.84     11553.02         0.00 MAC_MATRIX_DW32_SUM_DW32_MULT_MODE0_14
+u_AI_ACC_TOP/u_SYSTOLIC_ARRAY/mac_row_gen[3].genblk1.u_MAC_ROW/mac_gen[3].genblk1.u_MAC        18615.30      0.3      8951.40      9663.90         0.00 MAC_MATRIX_DW32_SUM_DW32_MULT_MODE0
+u_AI_ACC_TOP/u_SYSTOLIC_ARRAY_CONTROLLER         2669.36      0.0       845.47      1823.90         0.00 SYSTOLIC_ARRAY_CONTROLLER_MAX_MATRIX_SIZE32_ARRAY_SIZE4_M_DIM4_K_DIM4_N_DIM4_MULT_MODE0_RAM_READ_DELAY1
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+Total                                                      936627.87   4639679.39          0.00
+1

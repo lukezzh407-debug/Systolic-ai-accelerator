@@ -1,0 +1,22 @@
+****************************************
+Report : constraint
+        -verbose
+Design : subsystem
+Version: X-2025.06-SP3
+Date   : Fri Sep 18 12:23:03 2026
+****************************************
+
+   late_timing
+   -----------
+
+No paths.
+
+   early_timing
+   -----------
+
+No paths.
+
+    max_transition                                 0.0000  (MET)
+    max_capacitance                              727.6339  (VIOLATED)
+    min_capacitance                                0.0000  (MET)
+1

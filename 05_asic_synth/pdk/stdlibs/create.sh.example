@@ -1,0 +1,4 @@
+#!/bin/sh
+# Build xh018_HD.ndm once. Requires Fusion Compiler (lm_shell) and XFAB_HOME.
+# Copy prep_ndm.tcl.example -> prep_ndm.tcl and tech.tcl.example -> ../tech.tcl first.
+lm_shell -f prep_ndm.tcl -output_log_file lm_output.txt

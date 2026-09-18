@@ -1,0 +1,39 @@
+****************************************
+Report : clock
+Design : subsystem
+Mode   : FuncModeB0
+Version: X-2025.06-SP3
+Date   : Fri Sep 18 12:22:47 2026
+****************************************
+
+
+Attributes:
+    p - Propagated clock
+    G - Generated  clock
+    U - Unexpanded generated clock
+
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+clk_in         100.00   {0 50}                        {clk}
+virtual__no_clock_ 10000.00 {0 5000}                  {}
+virtual_from_clk_in.1_r 100.00 {0 50}                 {}
+virtual_from_clk_in.2_r 100.00 {0 50}                 {}
+virtual_from_clk_in.3_r 100.00 {0 50}                 {}
+virtual_from_clk_in.4_r 100.00 {0 50}                 {}
+virtual_from_clk_in.5_r 100.00 {0 50}                 {}
+virtual_from_clk_in.6_r 100.00 {0 50}                 {}
+virtual_from_clk_in.7_r 100.00 {0 50}                 {}
+virtual_from_clk_in.top_r 100.00 {0 50}               {}
+virtual_from_clk_in_r 100.00 {0 50}                   {}
+virtual_thru_clk_in.top_r 100.00 {0 50}               {}
+virtual_to_clk_in.1_r 100.00 {0 50}                   {}
+virtual_to_clk_in.2_r 100.00 {0 50}                   {}
+virtual_to_clk_in.3_r 100.00 {0 50}                   {}
+virtual_to_clk_in.4_r 100.00 {0 50}                   {}
+virtual_to_clk_in.5_r 100.00 {0 50}                   {}
+virtual_to_clk_in.6_r 100.00 {0 50}                   {}
+virtual_to_clk_in.7_r 100.00 {0 50}                   {}
+virtual_to_clk_in.top_r 100.00 {0 50}                 {}
+virtual_to_clk_in_r 100.00 {0 50}                     {}
+
+1

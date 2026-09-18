@@ -1,0 +1,17 @@
+# One-time compile of xh018_HD.ndm from a licensed PDK. Output is gitignored.
+source ../tech.tcl
+
+set out_dir .
+set site_default "hd"
+set scale_factor ${XFAB_DESIGN_LIBRARY_SCALE_FACTOR}
+set tech_info(ROUTE,LAYER_DIRECTIONS,OFFSET) "$XFAB_TECH_INFO"
+
+create_workspace -scale_factor $scale_factor -flow normal -technology "${TECH_FILE}" NormalWorkspace
+read_db  "${XFAB_HOME}/diglibs/D_CELLS_HD/v6_0/liberty_db_LPMOS/v6_0_0/PVT_1_80V_range/D_CELLS_HD_LPMOS_slow_1_62V_m40C.db"
+read_lef "${XFAB_HOME}/diglibs/D_CELLS_HD/v6_0/LEF/v6_0_0/xh018_D_CELLS_HD.lef"
+read_ndm "${XFAB_HOME}/diglibs/D_CELLS_HD/v6_0/synopsys_ICC2/v6_0_1/xh018-D_CELLS_HD-synopsys_ICCompiler2-v6_0_1/xh018_xx51_MET5_METMID_D_CELLS_HD.ndm"
+set_attribute [get_lib_cells */*/design] site_name $site_default
+check_workspace
+commit_workspace -output "${out_dir}/xh018_HD.ndm"
+remove_workspace
+exit

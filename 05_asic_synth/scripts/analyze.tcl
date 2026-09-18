@@ -1,4 +1,9 @@
-set rtl_path "../rtl"
+# RTL file list. Override rtl_path before sourcing, e.g. from Makefile:
+#   set rtl_path ../rtl_bank_registered
+#   set rtl_path ../rtl_bank_internal_slice
+if {![info exists rtl_path]} {
+    set rtl_path "../rtl_bank_internal_slice"
+}
 
 analyze -format sv \
     [list \
