@@ -1,0 +1,54 @@
+# UVM ai_acc_smoke_test
+# Example VCS transcript. Tool banner and FSDB messages are omitted.
+
+UVM_INFO @ 0: reporter [RNTST] Running test ai_acc_smoke_test...
+UVM_INFO /opt/Synopsys/vcs/V-2023.12-SP2/etc/uvm-1.2/base/uvm_root.svh(589) @ 0: reporter [UVMTOP] UVM testbench topology:
+--------------------------------------------------------------
+Name                       Type                    Size  Value
+--------------------------------------------------------------
+uvm_test_top               ai_acc_smoke_test       -     @341 
+  env                      ai_acc_env              -     @354 
+    apb                    apb_agent               -     @363 
+      drv                  apb_driver              -     @373 
+        rsp_port           uvm_analysis_port       -     @392 
+        seq_item_port      uvm_seq_item_pull_port  -     @382 
+      sqr                  apb_sequencer           -     @402 
+        rsp_export         uvm_analysis_export     -     @411 
+        seq_item_export    uvm_seq_item_pull_imp   -     @529 
+        arbitration_queue  array                   0     -    
+        lock_queue         array                   0     -    
+        num_last_reqs      integral                32    'd1  
+        num_last_rsps      integral                32    'd1  
+--------------------------------------------------------------
+
+UVM_INFO uvm/tests/ai_acc_base_test.svh(101) @ 0: uvm_test_top [GEMM] ==== identity_8b act=1 wei=1 out=3 ====
+UVM_INFO uvm/tests/ai_acc_base_test.svh(141) @ 8825000: uvm_test_top [GEMM] identity_8b compare done
+UVM_INFO uvm/tests/ai_acc_base_test.svh(101) @ 8825000: uvm_test_top [GEMM] ==== ones_8b4b act=1 wei=0 out=3 ====
+UVM_INFO uvm/tests/ai_acc_base_test.svh(141) @ 17495000: uvm_test_top [GEMM] ones_8b4b compare done
+UVM_INFO /opt/Synopsys/vcs/V-2023.12-SP2/etc/uvm-1.2/base/uvm_objection.svh(1276) @ 17495000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO uvm/tests/ai_acc_base_test.svh(148) @ 17495000: uvm_test_top [uvm_test_top] 
+-------- UVM TEST PASS --------
+
+UVM_INFO /opt/Synopsys/vcs/V-2023.12-SP2/etc/uvm-1.2/base/uvm_report_server.svh(904) @ 17495000: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+Quit count :     0 of    20
+** Report counts by severity
+UVM_INFO :    9
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[GEMM]     4
+[RNTST]     1
+[TEST_DONE]     1
+[UVM/RELNOTES]     1
+[UVMTOP]     1
+[uvm_test_top]     1
+
+$finish called from file "/opt/Synopsys/vcs/V-2023.12-SP2/etc/uvm-1.2/base/uvm_root.svh", line 527.
+$finish at simulation time             17495000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 17495000 ps
+CPU Time:      0.110 seconds;       Data structure size:   0.3Mb
+Sun Oct 25 15:56:12 2026

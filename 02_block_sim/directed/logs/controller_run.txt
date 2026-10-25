@@ -1,0 +1,53 @@
+# tb_controller  SYSTOLIC_ARRAY_CONTROLLER  (excerpt)
+# Example VCS transcript. Tool banner and FSDB messages are omitted.
+
+============================================================
+SYSTOLIC_ARRAY_CONTROLLER  ARRAY_SIZE=8  MAX_MATRIX_SIZE=32
+MULT_MODE=0 (0=Booth)  RAM_READ_DELAY=1  mode=32-bit
+============================================================
+[46000] cyc=1 EN=0 computen=0 act=00000000 wei=00000000 MAC=000000000000000 done=0
+[56000] cyc=2 EN=0 computen=0 act=00000000 wei=00000000 MAC=000000000000000 done=0
+[66000] cyc=3 EN=0 computen=0 act=00000000 wei=00000000 MAC=000000000000000 done=0
+[76000] cyc=4 EN=1 computen=1 act=00000001 wei=00000001 MAC=000000000000000 done=0
+[86000] cyc=5 EN=0 computen=1 act=00000000 wei=00000000 MAC=000000000000001 done=0
+[96000] cyc=6 EN=0 computen=1 act=00000000 wei=00000000 MAC=000000000000000 done=0
+[106000] cyc=7 EN=0 computen=1 act=00000000 wei=00000000 MAC=000000000000000 done=0
+[116000] cyc=8 EN=0 computen=1 act=00000000 wei=00000000 MAC=000000000000000 done=0
+[126000] cyc=9 EN=0 computen=1 act=00000000 wei=00000000 MAC=000000000000000 done=0
+[136000] cyc=10 EN=0 computen=1 act=00000000 wei=00000000 MAC=000000000000000 done=0
+[146000] cyc=11 EN=0 computen=1 act=00000000 wei=00000000 MAC=000000000000000 done=0
+[156000] cyc=12 EN=0 computen=1 act=00000000 wei=00000000 MAC=000000000000000 done=0
+[166000] cyc=13 EN=0 computen=1 act=00000000 wei=00000000 MAC=000000000000000 done=0
+[176000] cyc=14 EN=0 computen=1 act=00000000 wei=00000000 MAC=000000000000000 done=0
+[186000] cyc=15 EN=0 computen=1 act=00000000 wei=00000000 MAC=000000000000000 done=0
+[196000] cyc=16 EN=0 computen=1 act=00000000 wei=00000000 MAC=000000000000000 done=0
+[206000] cyc=17 EN=0 computen=1 act=00000000 wei=00000000 MAC=000000000000000 done=0
+[216000] cyc=18 EN=0 computen=1 act=00000000 wei=00000000 MAC=000000000000000 done=0
+[226000] cyc=19 EN=0 computen=1 act=00000000 wei=00000000 MAC=000000000000000 done=0
+[236000] cyc=20 EN=0 computen=1 act=00000000 wei=00000000 MAC=000000000000000 done=0
+[246000] cyc=21 EN=0 computen=1 act=00000011 wei=00000011 MAC=000000000000000 done=0
+[256000] cyc=22 EN=0 computen=1 act=00000000 wei=00000000 MAC=000000000000011 done=0
+[266000] cyc=23 EN=0 computen=1 act=00000000 wei=00000000 MAC=000000000000000 done=0
+[276000] cyc=24 EN=0 computen=1 act=00000000 wei=00000000 MAC=000000000000000 done=0
+...
+(cycles 25..785 omitted; fifoen wavefront then idle until SA_done)
+...
+[7895000] SA_done seen at cycle 786
+[7896000] cyc=786 EN=0 computen=0 act=00000000 wei=00000000 MAC=000000000000000 done=1
+[7906000] cyc=787 EN=0 computen=0 act=00000000 wei=00000000 MAC=000000000000000 done=0
+[7916000] cyc=788 EN=0 computen=0 act=00000000 wei=00000000 MAC=000000000000000 done=0
+[7926000] cyc=789 EN=0 computen=0 act=00000000 wei=00000000 MAC=000000000000000 done=0
+[7936000] cyc=790 EN=0 computen=0 act=00000000 wei=00000000 MAC=000000000000000 done=0
+[7946000] cyc=791 EN=0 computen=0 act=00000000 wei=00000000 MAC=000000000000000 done=0
+[7956000] cyc=792 EN=0 computen=0 act=00000000 wei=00000000 MAC=000000000000000 done=0
+[7966000] cyc=793 EN=0 computen=0 act=00000000 wei=00000000 MAC=000000000000000 done=0
+[7976000] cyc=794 EN=0 computen=0 act=00000000 wei=00000000 MAC=000000000000000 done=0
+
+======== CONTROLLER TEST PASS ========
+
+$finish called from file "./../../directed/tb_controller.sv", line 162.
+$finish at simulation time              7985000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 7985000 ps
+CPU Time:      0.120 seconds;       Data structure size:   0.0Mb
+Tue Oct 20 11:52:14 2026

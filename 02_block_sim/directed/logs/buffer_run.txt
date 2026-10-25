@@ -1,0 +1,28 @@
+# tb_buffer_wrapper  BUFFER_WRAPPER_SR
+# Example VCS transcript. Tool banner and FSDB messages are omitted.
+
+BUFFER_WRAPPER_SR  SRAM_DEPTH=8  ARRAY_SIZE=8
+
+==== BUFFER write/read  32-bit (mode=11)  8x8 ====
+[BUFFER] PASS unpack+tiling  32-bit
+
+==== BUFFER write/read  16-bit (mode=10)  8x8 ====
+[BUFFER] PASS unpack+tiling  16-bit
+
+==== BUFFER write/read  8-bit (mode=01)  8x8 ====
+[BUFFER] PASS unpack+tiling  8-bit
+
+==== BUFFER write/read  4-bit (mode=00)  8x8 ====
+[BUFFER] PASS unpack+tiling  4-bit
+
+==== BUFFER bias + APB readout ====
+[BUFFER] PASS bias mapping
+
+======== BUFFER_WRAPPER TEST PASS ========
+
+$finish called from file "./../../directed/tb_buffer_wrapper.sv", line 294.
+$finish at simulation time             20585000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 20585000 ps
+CPU Time:      0.290 seconds;       Data structure size:   0.1Mb
+Thu Oct  1 02:51:51 2026

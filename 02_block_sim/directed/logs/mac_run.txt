@@ -1,0 +1,49 @@
+# tb_mac  Booth MAC
+# Example VCS transcript. Tool banner and FSDB messages are omitted.
+
+[MAC] PASS: 8-bit +*+  mode=1 a=3 b=5 expected=15 got=15
+[MAC] PASS: 8-bit +*+ right_dout
+[MAC] PASS: 8-bit +*+ down_dout
+[MAC] PASS: 8-bit -*+  mode=1 a=-3 b=5 expected=0 got=0
+[MAC] PASS: 8-bit -*+ right_dout
+[MAC] PASS: 8-bit -*+ down_dout
+[MAC] PASS: 8-bit +*-  mode=1 a=7 b=-4 expected=-28 got=-28
+[MAC] PASS: 8-bit +*- right_dout
+[MAC] PASS: 8-bit +*- down_dout
+[MAC] PASS: 8-bit -*-  mode=1 a=-8 b=-6 expected=20 got=20
+[MAC] PASS: 8-bit -*- right_dout
+[MAC] PASS: 8-bit -*- down_dout
+[MAC] PASS: 16-bit +*+  mode=2 a=123 b=45 expected=5535 got=5535
+[MAC] PASS: 16-bit +*+ right_dout
+[MAC] PASS: 16-bit +*+ down_dout
+[MAC] PASS: 16-bit -*+  mode=2 a=-123 b=45 expected=0 got=0
+[MAC] PASS: 16-bit -*+ right_dout
+[MAC] PASS: 16-bit -*+ down_dout
+[MAC] PASS: 16-bit +*-  mode=2 a=300 b=-12 expected=-3600 got=-3600
+[MAC] PASS: 16-bit +*- right_dout
+[MAC] PASS: 16-bit +*- down_dout
+[MAC] PASS: 16-bit -*-  mode=2 a=-256 b=-128 expected=29168 got=29168
+[MAC] PASS: 16-bit -*- right_dout
+[MAC] PASS: 16-bit -*- down_dout
+[MAC] PASS: 32-bit +*+  mode=3 a=1000 b=2000 expected=2000000 got=2000000
+[MAC] PASS: 32-bit +*+ right_dout
+[MAC] PASS: 32-bit +*+ down_dout
+[MAC] PASS: 32-bit -*+  mode=3 a=-1000 b=2000 expected=0 got=0
+[MAC] PASS: 32-bit -*+ right_dout
+[MAC] PASS: 32-bit -*+ down_dout
+[MAC] PASS: 32-bit +*-  mode=3 a=123456 b=-789 expected=-97406784 got=-97406784
+[MAC] PASS: 32-bit +*- right_dout
+[MAC] PASS: 32-bit +*- down_dout
+[MAC] PASS: 32-bit -*-  mode=3 a=-12345 b=-6789 expected=-13596579 got=-13596579
+[MAC] PASS: 32-bit -*- right_dout
+[MAC] PASS: 32-bit -*- down_dout
+[MAC] PASS: shift_en load accumulator
+
+======== MAC TEST PASS ========
+
+$finish called from file "./../../directed/tb_mac.sv", line 154.
+$finish at simulation time              1376000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 1376000 ps
+CPU Time:      0.110 seconds;       Data structure size:   0.0Mb
+Mon Oct 19 04:32:15 2026

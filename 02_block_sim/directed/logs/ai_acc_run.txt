@@ -1,0 +1,26 @@
+# tb_ai_acc_top  directed GEMM
+# Example VCS transcript. Tool banner and FSDB messages are omitted.
+
+[TB] MATRIX_SIZE=8 ARRAY_SIZE=8 SEED=1
+
+==== identity_8b  act=1 wei=1 out=3 pattern=identity/identity ====
+  tile (0,0)
+[identity_8b] PASS  8 x 8
+
+==== ones_8b4b  act=1 wei=0 out=3 pattern=ones/ones ====
+  tile (0,0)
+[ones_8b4b] PASS  8 x 8
+
+==== rand_8b4b  act=1 wei=0 out=3 pattern=random/random ====
+  tile (0,0)
+[rand_8b4b] PASS  8 x 8
+
+======== AI_ACC_TOP  tests=3  errors=0 ========
+======== PASS ========
+
+$finish called from file "./../../directed/tb_ai_acc_top.sv", line 310.
+$finish at simulation time             26165000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 26165000 ps
+CPU Time:      0.130 seconds;       Data structure size:   0.1Mb
+Sun Oct 25 15:34:01 2026

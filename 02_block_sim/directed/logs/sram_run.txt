@@ -1,0 +1,30 @@
+# tb_sram  simple_dualport_ram
+# Example VCS transcript. Tool banner and FSDB messages are omitted.
+
+[SRAM] write phase
+[SRAM] read-back phase
+[SRAM] PASS addr=0 data=0xa0
+[SRAM] PASS addr=1 data=0xa1
+[SRAM] PASS addr=2 data=0xa2
+[SRAM] PASS addr=3 data=0xa3
+[SRAM] PASS addr=4 data=0xa4
+[SRAM] PASS addr=5 data=0xa5
+[SRAM] PASS addr=6 data=0xa6
+[SRAM] PASS addr=7 data=0xa7
+[SRAM] PASS addr=8 data=0xa8
+[SRAM] PASS addr=9 data=0xa9
+[SRAM] PASS addr=10 data=0xaa
+[SRAM] PASS addr=11 data=0xab
+[SRAM] PASS addr=12 data=0xac
+[SRAM] PASS addr=13 data=0xad
+[SRAM] PASS addr=14 data=0xae
+[SRAM] PASS addr=15 data=0xaf
+
+======== SRAM TEST PASS ========
+
+$finish called from file "./../../directed/tb_sram.sv", line 104.
+$finish at simulation time               705000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 705000 ps
+CPU Time:      0.720 seconds;       Data structure size:   0.0Mb
+Mon Oct 19 02:09:00 2026

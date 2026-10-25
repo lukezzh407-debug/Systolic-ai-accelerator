@@ -1,0 +1,12 @@
+# Local VCS / Verdi products. Example transcripts live in logs/ as .txt.
+simv
+simv.daidir/
+csrc/
+wave/
+*.fsdb
+*.key
+vc_hdrs.h
+DVEfiles/
+verdiLog/
+novas.conf
+novas.rc

@@ -2,7 +2,7 @@
 
 APB-attached 4×4 systolic-array accelerator for 32×32 integer GEMM (`ARRAY_SIZE=4`, `MATRIX_SIZE=32`). Frontend RTL, SoC/FPGA bring-up, and an X-FAB **XH018** Fusion Compiler path. Intended as a public project log for internships / full-time applications.
 
-**Current snapshot:** RTL + **logic synthesis to `logic_opto`**. Block sim, Edu4Chip SoC + C host, FPGA, gate-level sim, and PnR are directory placeholders.
+**Current snapshot:** RTL + **logic synthesis to `logic_opto`**, and block-level testbenches in [`02_block_sim/`](02_block_sim/). Edu4Chip SoC + C host, FPGA, gate-level sim, and PnR are directory placeholders.
 
 ## Results (synthesis, this snapshot)
 
@@ -28,7 +28,7 @@ With per-bank (then per-slice) write registers, **path timing closes**; `logic_o
 | Path | Status | Contents |
 |------|--------|----------|
 | [`01_rtl/`](01_rtl/) | Done | Baseline frontend RTL (no write-path cloning) |
-| [`02_block_sim/`](02_block_sim/) | Later | Module testbenches |
+| [`02_block_sim/`](02_block_sim/) | Done | Directed and UVM testbenches (no RTL or sim binaries) |
 | [`03_soc_edu4chip/`](03_soc_edu4chip/) | Later | APB SoC integration, C/C++ host |
 | [`04_fpga/`](04_fpga/) | Later | Board bring-up (no vendor bitstream) |
 | [`05_asic_synth/`](05_asic_synth/) | In progress | FC scripts, constraints, three RTL variants, QoR reports |
